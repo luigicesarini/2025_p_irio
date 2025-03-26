@@ -1,0 +1,33 @@
+start of job
+eliminating results slurm older than 10 days
+2025-03-25 18:53:18
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+conda activate r_symi
+Rscript shocks/create_input.R 2012 40797
+
+conda activate my_xclim_env
+./shocks/create_input.py -id 40797 -yr 2012
+
+rm ../test/tot_addetti_by_sector_intermediate_40567_1994_Veneto.csv ../test/tot_addetti_by_sector_intermediate_40600_1997_Umbria.csv ../test/tot_addetti_by_sector_intermediate_40744_2009_Puglia.csv ../test/tot_addetti_by_sector_intermediate_40744_2009_Sicilia.csv ../test/tot_addetti_by_sector_intermediate_40772_2011_Basilicata.csv ../test/tot_addetti_by_sector_intermediate_40785_2012_Sicilia.csv
+----------------------------------------------
+
+The job was done in 211 seconds
+
+Tue Mar 25 18:56:49 CET 2025
+end of job

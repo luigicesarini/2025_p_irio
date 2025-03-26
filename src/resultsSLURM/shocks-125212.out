@@ -1,0 +1,33 @@
+start of job
+eliminating results slurm older than 10 days
+2025-03-25 18:39:50
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+conda activate r_symi
+Rscript shocks/create_input.R 1978 40377
+
+conda activate my_xclim_env
+./shocks/create_input.py -id 40377 -yr 1978
+
+rm ../test/tot_addetti_by_sector_intermediate_40245_1968_Piemonte.csv ../test/tot_addetti_by_sector_intermediate_40251_1968_Friuli-Venezia Giulia.csv ../test/tot_addetti_by_sector_intermediate_40315_1974_Lombardia.csv ../test/tot_addetti_by_sector_intermediate_40353_1976_Friuli-Venezia Giulia.csv
+----------------------------------------------
+
+The job was done in 397 seconds
+
+Tue Mar 25 18:46:27 CET 2025
+end of job

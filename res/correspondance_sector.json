@@ -1,0 +1,330 @@
+[
+    {
+    "name_ita": "Attività estrattiva",
+    "id": 3,
+    "hazus_sector":"IND4",
+    "ING_sector":"na",
+    "min_ateco":5100,
+    "max_ateco": 9900
+    },
+    {
+    "name_ita": "Industrie alimentari, delle bevande e del tabacco",
+    "id": 4,
+    "hazus_sector":"IND3",
+    "ING_sector":"IND_LG",
+    "min_ateco": 10110,
+    "max_ateco": 12999
+    },
+    {
+    "name_ita": "Industrie tessili, abbigliamento, pelli e accessori",
+    "id": 5,    
+    "hazus_sector":"IND1+IND2",
+    "ING_sector":"IND_LG",
+    "min_ateco": 13100,
+    "max_ateco":15202
+    },
+    {
+    "name_ita": "Industria del legno",
+    "id": 6,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_LG",
+    "min_ateco":16100 ,
+    "max_ateco":16294
+    },
+    {
+    "name_ita": "Carta e prodotti di carta",
+    "id": 7,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_LG",
+    "min_ateco": 17110,
+    "max_ateco":17290
+    },
+    {
+    "name_ita": "Servizi di stampa e di registrazione",
+    "id": 8,
+    "hazus_sector":"IND2",
+    "ING_sector":"IND_LG",
+    "min_ateco":18110,
+    "max_ateco":18200
+    },
+    {
+    "name_ita": "Fabbricazione di coke e prodotti petroliferi raffinati",
+    "id": 9,
+    "hazus_sector":"IND3",
+    "ING_sector":"IND_HV",
+    "min_ateco":19100,
+    "max_ateco":19209
+    },
+    {
+    "name_ita": "Fabbricazione di sostanze e prodotti chimici",
+    "id": 10,
+    "hazus_sector":"IND3",
+    "ING_sector":"Media1",
+    "min_ateco":20110,
+    "max_ateco":20600
+    },
+    {
+    "name_ita": "Produzione di articoli farmaceutici, chimico-medicinali e botanici",
+    "id": 11,
+    "hazus_sector":"IND3",
+    "ING_sector":"IND_LG",
+    "min_ateco":21100,
+    "max_ateco":21200
+    },
+    {
+    "name_ita": "Fabbricazione di articoli in gomma e materie plastiche",
+    "id": 12,
+    "hazus_sector":"IND2",
+    "ING_sector":"IND_LG",
+    "min_ateco":22111,
+    "max_ateco":22290
+    },
+    {
+    "name_ita": "Altri prodotti della lavorazione di minerali non metalliferi",
+    "id": 13,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_LG",
+    "min_ateco":23110,
+    "max_ateco":23990
+    },
+    {
+    "name_ita": "Metalli",
+    "id": 14,
+    "hazus_sector":"IND4",
+    "ING_sector":"IND_HV",
+    "min_ateco":24100,
+    "max_ateco":24540
+    },
+    {
+    "name_ita": "Prodotti in metallo, esclusi macchine e impianti",
+    "id": 15,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_LG",
+    "min_ateco":25110,
+    "max_ateco":25999
+    },
+    {
+    "name_ita": "Fabbricazione di computer, apparecchi elettronici e ottici",
+    "id": 16,
+    "hazus_sector":"IND5",
+    "ING_sector":"IND_HT",
+    "min_ateco":26110,
+    "max_ateco":26800
+    },
+    {
+    "name_ita": "Fabbricazione di apparecchi elettrici",
+    "id": 17,
+    "hazus_sector":"IND5",
+    "ING_sector":"IND_HT",
+    "min_ateco":27110,
+    "max_ateco":27900
+    },
+    {
+    "name_ita": "Fabbricazione di macchinari ed apparecchi n.c.a.",
+    "id": 18,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_HV",
+    "min_ateco":28111,
+    "max_ateco":28999
+    },
+    {
+    "name_ita": "Autoveicoli, rimorchi e semirimorchi",
+    "id": 19,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_HV",
+    "min_ateco":29100,
+    "max_ateco":29320
+    },
+    {
+    "name_ita": "Altri mezzi di trasporto",
+    "id": 20,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_HV",
+    "min_ateco":30110,
+    "max_ateco":30990
+    },
+    {
+    "name_ita": "Mobilio; altri manufatti",
+    "id": 21,
+    "hazus_sector":"IND2",
+    "ING_sector":"IND_LG",
+    "min_ateco":31011,
+    "max_ateco":32999
+    },
+    {
+    "name_ita": "Servizi di riparazione e installazione di macchinari e apparecchi",
+    "id": 22,
+    "hazus_sector":"IND1",
+    "ING_sector":"IND_LG",
+    "min_ateco":33110,
+    "max_ateco":33200
+    },
+    {
+    "name_ita": "Fornitura di energia elettrica, gas, vapore e aria condizionata",
+    "id": 23,
+    "hazus_sector":"COM4",
+    "ING_sector":"COM_OF",
+    "min_ateco":35110,
+    "max_ateco":35300
+    },
+    {
+    "name_ita": "Acqua naturale; servizi di trattamento delle acque e di produzione e distribuzione d’acqua",
+    "id": 24,
+    "hazus_sector":"COM4",
+    "ING_sector":"na",
+    "min_ateco":36000,
+    "max_ateco":36000
+    },
+    {
+    "name_ita": "Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",
+    "id": 25,
+    "hazus_sector":"COM4",
+    "ING_sector":"na",
+    "min_ateco":37000,
+    "max_ateco":39000
+    },
+    {
+    "name_ita": "Costruzioni",
+    "id": 26,
+    "hazus_sector":"IND6",
+    "ING_sector":"IND_CS",
+    "min_ateco":41100,
+    "max_ateco":43990
+    },
+    {   
+    "name_ita": "Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",
+    "id": 27,
+    "hazus_sector":"COM1+COM2+COM3",
+    "ING_sector":"Media2",
+    "min_ateco":45110,
+    "max_ateco":47992
+    },
+    {
+    "name_ita": "Trasporto e magazzinaggio",
+    "id": 28,
+    "hazus_sector":"COM2+COM4+GOV1",
+    "ING_sector":"Media3",
+    "min_ateco":49100,
+    "max_ateco":53200
+    },
+    {
+    "name_ita": "Servizi di alloggio e ristorazione",
+    "id": 29,
+    "hazus_sector":"COM8+RES4",
+    "ING_sector":"Media4",
+    "min_ateco":55100,
+    "max_ateco":56300
+    },
+    {
+    "name_ita": "Editoria, audiovisivi e attività radiotelevisive",
+    "id": 30,
+    "hazus_sector":"COM8",
+    "ING_sector":"COM_OF",
+    "min_ateco":58110,
+    "max_ateco":60200
+    },
+    {
+    "name_ita": "Telecomunicazioni",
+    "id": 31,
+    "hazus_sector":"COM8",
+    "ING_sector":"COM_OF",
+    "min_ateco":61100,
+    "max_ateco":61909
+    },
+    {
+    "name_ita": "Servizi IT e altri servizi informativi",
+    "id": 32,
+    "hazus_sector":"COM8",
+    "ING_sector":"COM_OF",
+    "min_ateco":62010,
+    "max_ateco":63990
+    },
+    {
+    "name_ita": "Attività finanziarie e assicurative",
+    "id": 33,
+    "hazus_sector":"COM5",
+    "ING_sector":"COM_OF",
+    "min_ateco":64110,
+    "max_ateco":66300
+    },
+    {
+    "name_ita": "Attività immobiliari",
+    "id": 34,
+    "hazus_sector":"COM4",
+    "ING_sector":"ATT_IM",
+    "min_ateco":68100,
+    "max_ateco":68320
+    },
+    {
+    "name_ita": "Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",
+    "id": 35,
+    "hazus_sector":"COM4",
+    "ING_sector":"COM_OF",
+    "min_ateco":69101,
+    "max_ateco":71202
+    },
+    {
+    "name_ita": "Servizi di ricerca e sviluppo scientifici",
+    "id": 36,
+    "hazus_sector":"COM4",
+    "ING_sector":"COM_OF",
+    "min_ateco":72110,
+    "max_ateco":72200
+    },
+    {
+    "name_ita": "Altre attività professionali, scientifiche e tecniche",
+    "id": 37,
+    "hazus_sector":"COM4",
+    "ING_sector":"COM_OF",
+    "min_ateco":73110,
+    "max_ateco":75000
+    },
+    {
+    "name_ita": "Altre attività di servizio",
+    "id": 38,
+    "hazus_sector":"COM4",
+    "ING_sector":"COM_OF",
+    "min_ateco":77110,
+    "max_ateco":82999
+    },
+    {
+    "name_ita": "Amministrazione pubblica e difesa; assicurazione sociale obbligatoria",
+    "id": 39,
+    "hazus_sector":"GOV1",
+    "ING_sector":"na",
+    "min_ateco":84111,
+    "max_ateco":84300
+    },
+    {
+    "name_ita": "Istruzione",
+    "id": 40,
+    "hazus_sector":"EDU1+EDU2",
+    "ING_sector":"EDU_00",
+    "min_ateco":85100,
+    "max_ateco":85600
+    },
+    {
+    "name_ita": "Sanità e assistenza sociale",
+    "id": 41,
+    "hazus_sector":"COM3+COM6+COM7+RES6",
+    "ING_sector":"na",
+    "min_ateco":86101,
+    "max_ateco":88990
+    },
+    {
+    "name_ita": "Attività artistiche, di intrattenimento e divertimento",
+    "id": 42,
+    "hazus_sector":"COM8+COM9",
+    "ING_sector":"na",
+    "min_ateco":90010,
+    "max_ateco":93299
+    },
+    {
+    "name_ita": "Altre attività di servizi",
+    "id": 43,
+    "hazus_sector":"COM3",
+    "ING_sector":"COM_OF",
+    "min_ateco":94110,
+    "max_ateco":99000
+    }
+]

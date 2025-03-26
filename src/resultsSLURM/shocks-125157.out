@@ -1,0 +1,33 @@
+start of job
+eliminating results slurm older than 10 days
+2025-03-25 18:38:17
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+conda activate r_symi
+Rscript shocks/create_input.R 1973 40309
+
+conda activate my_xclim_env
+./shocks/create_input.py -id 40309 -yr 1973
+
+rm ../test/tot_addetti_by_sector_intermediate_40100_1957_Lombardia.csv ../test/tot_addetti_by_sector_intermediate_40141_1960_Puglia.csv ../test/tot_addetti_by_sector_intermediate_40141_1960_Sicilia.csv ../test/tot_addetti_by_sector_intermediate_40141_1960_Toscana.csv ../test/tot_addetti_by_sector_intermediate_40151_1961_Piemonte.csv ../test/tot_addetti_by_sector_intermediate_40151_1961_Veneto.csv ../test/tot_addetti_by_sector_intermediate_40176_1963_Puglia.csv ../test/tot_addetti_by_sector_intermediate_40176_1963_Sicilia.csv ../test/tot_addetti_by_sector_intermediate_40176_1963_Toscana.csv ../test/tot_addetti_by_sector_intermediate_40199_1965_Veneto.csv ../test/tot_addetti_by_sector_intermediate_40252_1968_Campania.csv ../test/tot_addetti_by_sector_intermediate_40253_1969_Friuli-Venezia Giulia.csv ../test/tot_addetti_by_sector_intermediate_40271_1970_Friuli-Venezia Giulia.csv ../test/tot_addetti_by_sector_intermediate_40271_1970_Lombardia.csv ../test/tot_addetti_by_sector_intermediate_40276_1970_Emilia-Romagna.csv ../test/tot_addetti_by_sector_intermediate_40288_1971_Lazio.csv ../test/tot_addetti_by_sector_intermediate_40290_1972_Abruzzo.csv ../test/tot_addetti_by_sector_intermediate_40292_1972_Emilia-Romagna.csv ../test/tot_addetti_by_sector_intermediate_40293_1972_Sardegna.csv ../test/tot_addetti_by_sector_intermediate_40293_1972_Sicilia.csv ../test/tot_addetti_by_sector_intermediate_40301_1972_Lazio.csv
+----------------------------------------------
+
+The job was done in 157 seconds
+
+Tue Mar 25 18:40:54 CET 2025
+end of job

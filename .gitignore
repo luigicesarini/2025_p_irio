@@ -1,0 +1,16 @@
+env/
+venv/
+notes/
+input_data/
+data/
+logs/
+cov_results/
+__pycache__/
+dist/
+build/
+temp/
+.coverage*
+.ipynb_checkpoints/
+.python-version
+.tox/
+out/

@@ -1,0 +1,33 @@
+start of job
+eliminating results slurm older than 10 days
+2025-03-25 18:38:22
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+conda activate r_symi
+Rscript shocks/create_input.R 1973 40308
+
+conda activate my_xclim_env
+./shocks/create_input.py -id 40308 -yr 1973
+
+rm ../test/tot_addetti_by_sector_intermediate_40170_1963_Marche.csv ../test/tot_addetti_by_sector_intermediate_40176_1963_Veneto.csv ../test/tot_addetti_by_sector_intermediate_40177_1963_Toscana.csv ../test/tot_addetti_by_sector_intermediate_40177_1963_Trentino-Alto Adige.csv ../test/tot_addetti_by_sector_intermediate_40221_1966_Umbria.csv ../test/tot_addetti_by_sector_intermediate_40221_1966_Veneto.csv ../test/tot_addetti_by_sector_intermediate_40268_1970_Campania.csv ../test/tot_addetti_by_sector_intermediate_40268_1970_Lazio.csv ../test/tot_addetti_by_sector_intermediate_40271_1970_Marche.csv ../test/tot_addetti_by_sector_intermediate_40280_1971_Abruzzo.csv ../test/tot_addetti_by_sector_intermediate_40288_1971_Liguria.csv ../test/tot_addetti_by_sector_intermediate_40290_1972_Calabria.csv ../test/tot_addetti_by_sector_intermediate_40292_1972_Friuli-Venezia Giulia.csv
+----------------------------------------------
+
+The job was done in 43 seconds
+
+Tue Mar 25 18:39:05 CET 2025
+end of job
