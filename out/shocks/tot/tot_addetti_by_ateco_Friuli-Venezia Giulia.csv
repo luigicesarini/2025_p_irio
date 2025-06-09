@@ -1,0 +1,738 @@
+ateco_ul_2007,ateco_sector,n_sector,hazus_sector,ING_sector,addetti_ul
+8110,Attività estrattiva,3.0,IND4,na,114.7699976
+8120,Attività estrattiva,3.0,IND4,na,80.05999888
+8910,Attività estrattiva,3.0,IND4,na,2.0
+8990,Attività estrattiva,3.0,IND4,na,12.48
+9900,Attività estrattiva,3.0,IND4,na,10.0
+10110,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,259.8999995
+10130,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,946.4299984
+10200,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,54.91
+10320,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,17.040000098
+10390,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,25.31999995
+10411,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,3.0
+10412,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,35.279999999999994
+10511,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,223.9700002
+10512,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,381.68999562
+10520,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,18.64
+10611,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,116.599999
+10612,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,10.0
+10614,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,32.2500005
+10711,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,1959.48999497
+10712,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,232.73999933
+10720,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,635.4599863000001
+10730,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,228.24000014
+10820,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,121.860001
+10830,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,795.04000222
+10840,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,26.460000009999998
+10850,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,583.2499983
+10860,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,276.119999
+10890,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,133.61000039
+10910,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,67.4100011
+10920,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,9.0
+11010,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,171.5899999
+11021,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,383.849997
+11022,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,50.239999
+11050,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,124.1299967
+11070,"Industrie alimentari, delle bevande e del tabacco",4.0,IND3,IND_LG,87.0100009
+13100,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,235.959999
+13200,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,98.0400003
+13300,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,179.62000001
+13910,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,30.0700002
+13921,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,113.00999962
+13922,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,257.5300029
+13930,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,2.0
+13940,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,21.969999
+13950,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,95.750002
+13961,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,42.939999
+13962,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,35.50999979
+13991,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,45.03999989
+13992,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,1.99
+14120,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,14.3899998
+14131,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,169.8699991
+14132,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,122.020000219
+14140,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,126.81000261
+14191,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,39.06999998
+14192,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,22.05
+14200,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,16.319999999
+14390,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,61.40999895
+15110,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,187.6099997
+15120,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,141.92000103
+15201,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,177.53999718
+15202,"Industrie tessili, abbigliamento, pelli e accessori",5.0,IND1+IND2,IND_LG,12.1100002
+16100,Industria del legno,6.0,IND1,IND_LG,1103.30000099
+16210,Industria del legno,6.0,IND1,IND_LG,1244.079966794
+16220,Industria del legno,6.0,IND1,IND_LG,17.7699999
+16231,Industria del legno,6.0,IND1,IND_LG,1305.33000183
+16232,Industria del legno,6.0,IND1,IND_LG,404.8899996
+16240,Industria del legno,6.0,IND1,IND_LG,280.6500049
+16291,Industria del legno,6.0,IND1,IND_LG,237.45999672
+16292,Industria del legno,6.0,IND1,IND_LG,96.9499988
+16293,Industria del legno,6.0,IND1,IND_LG,10.34
+16294,Industria del legno,6.0,IND1,IND_LG,108.70000110000001
+17110,Carta e prodotti di carta,7.0,IND1,IND_LG,0.0
+17120,Carta e prodotti di carta,7.0,IND1,IND_LG,1209.59001
+17210,Carta e prodotti di carta,7.0,IND1,IND_LG,490.8500001
+17220,Carta e prodotti di carta,7.0,IND1,IND_LG,94.03000212
+17230,Carta e prodotti di carta,7.0,IND1,IND_LG,420.570007
+17290,Carta e prodotti di carta,7.0,IND1,IND_LG,54.880002000000005
+18110,Servizi di stampa e di registrazione,8.0,IND2,IND_LG,4.3699999
+18120,Servizi di stampa e di registrazione,8.0,IND2,IND_LG,1238.399991141
+18130,Servizi di stampa e di registrazione,8.0,IND2,IND_LG,81.07999991
+18140,Servizi di stampa e di registrazione,8.0,IND2,IND_LG,285.8100099
+18200,Servizi di stampa e di registrazione,8.0,IND2,IND_LG,7.98
+19201,Fabbricazione di coke e prodotti petroliferi raffinati,9.0,IND3,IND_HV,8.0
+19203,Fabbricazione di coke e prodotti petroliferi raffinati,9.0,IND3,IND_HV,68.439999
+19204,Fabbricazione di coke e prodotti petroliferi raffinati,9.0,IND3,IND_HV,2.99
+20110,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,44.29
+20120,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,13.9200001
+20130,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,197.64001000000002
+20140,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,79.01
+20150,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,18.59000022
+20160,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,96.680002
+20300,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,321.6800007
+20411,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,1.0
+20412,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,22.79
+20420,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,127.3999997
+20510,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,0.27000001
+20520,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,90.1700029
+20530,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,6.47
+20592,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,0.0
+20594,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,222.4699988
+20596,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,1.1
+20599,Fabbricazione di sostanze e prodotti chimici,10.0,IND3,Media1,28.85
+21100,"Produzione di articoli farmaceutici, chimico-medicinali e botanici",11.0,IND3,IND_LG,347.380002
+21200,"Produzione di articoli farmaceutici, chimico-medicinali e botanici",11.0,IND3,IND_LG,196.090001
+22190,Fabbricazione di articoli in gomma e materie plastiche,12.0,IND2,IND_LG,299.8700033
+22210,Fabbricazione di articoli in gomma e materie plastiche,12.0,IND2,IND_LG,1077.3800004999998
+22220,Fabbricazione di articoli in gomma e materie plastiche,12.0,IND2,IND_LG,604.1499999
+22230,Fabbricazione di articoli in gomma e materie plastiche,12.0,IND2,IND_LG,358.6100018
+22290,Fabbricazione di articoli in gomma e materie plastiche,12.0,IND2,IND_LG,2013.73000556
+23110,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,154.48
+23120,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,455.31999859999996
+23130,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,504.28999
+23140,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,1.0
+23192,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,6.75
+23199,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,56.54
+23200,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,225.45999001
+23310,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,2.0
+23320,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,25.1300001
+23410,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,57.56000007
+23420,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,13.0
+23440,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,0.0
+23490,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,1.0
+23510,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,133.6600029
+23521,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,2.0
+23610,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,479.02000097999996
+23620,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,10.23
+23630,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,136.5399999
+23640,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,19.92
+23650,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,3.0
+23690,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,338.66000984
+23701,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,553.20000049
+23702,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,253.49999956
+23703,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,148.330003399
+23910,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,40.480000000000004
+23990,Altri prodotti della lavorazione di minerali non metalliferi,13.0,IND1,IND_LG,203.9299969
+24100,Metalli,14.0,IND4,IND_HV,3087.3900491
+24202,Metalli,14.0,IND4,IND_HV,457.7500022
+24320,Metalli,14.0,IND4,IND_HV,77.0300039
+24330,Metalli,14.0,IND4,IND_HV,263.8300021
+24340,Metalli,14.0,IND4,IND_HV,161.460001999
+24420,Metalli,14.0,IND4,IND_HV,62.95999898
+24510,Metalli,14.0,IND4,IND_HV,680.3900100000001
+24520,Metalli,14.0,IND4,IND_HV,752.1500000000001
+24530,Metalli,14.0,IND4,IND_HV,436.65000299999997
+24540,Metalli,14.0,IND4,IND_HV,24.49000001
+25110,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,4002.409991788
+25121,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,1385.18000254
+25122,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,248.4600005
+25210,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,314.56999101
+25290,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,928.5700112
+25300,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,29.72
+25500,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,1732.329999379
+25610,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,1297.10001113
+25620,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,4108.820000178
+25710,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,329.1799983
+25720,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,147.4300001
+25731,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,1267.2500169
+25732,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,556.7900039
+25910,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,68.540001
+25920,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,48.9999995
+25931,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,167.8900008
+25932,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,73.2799997
+25940,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,659.3799908999999
+25991,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,44.56
+25992,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,53.209999
+25993,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,409.04000071999997
+25999,"Prodotti in metallo, esclusi macchine e impianti",15.0,IND1,IND_LG,1241.5199910000001
+26110,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,185.76000091
+26120,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,301.88000034
+26200,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,329.5599989
+26301,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,24.889999
+26302,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,1066.509976
+26400,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,55.9200003
+26511,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,8.4499998
+26512,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,696.41001038
+26520,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,29.0
+26600,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,182.3599992
+26701,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,22.860000398
+26702,"Fabbricazione di computer, apparecchi elettronici e ottici",16.0,IND5,IND_HT,3.0
+27110,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,1008.87997788
+27120,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,479.2899905
+27320,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,59.26999981
+27330,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,346.88000323
+27400,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,285.36000102
+27510,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,1394.1099981
+27520,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,314.569999201
+27900,Fabbricazione di apparecchi elettrici,17.0,IND5,IND_HT,887.4999938999999
+28111,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,1323.71
+28112,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,15.08
+28120,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,56.510001
+28130,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,89.2599994
+28140,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,626.28000072
+28151,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,360.5399908
+28211,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,107.07000122000001
+28212,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,124.4100001
+28220,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,586.0100053
+28230,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,31.5699999
+28240,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,2.0
+28250,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,3341.90999719
+28291,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,14.3799999
+28292,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,173.42
+28293,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,220.7199983
+28299,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,1184.6300051599999
+28309,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,441.4999994
+28410,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,486.079998
+28490,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,693.24999789
+28910,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,3514.47000241
+28920,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,519.0100170100001
+28930,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,1660.65997418
+28941,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,497.24000090000004
+28943,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,19.2799998
+28950,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,80.330002
+28960,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,154.9499968
+28991,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,21.73
+28992,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,200.1400001
+28999,Fabbricazione di macchinari ed apparecchi n.c.a.,18.0,IND1,IND_HV,143.51000027999999
+29100,"Autoveicoli, rimorchi e semirimorchi",19.0,IND1,IND_HV,11.8
+29200,"Autoveicoli, rimorchi e semirimorchi",19.0,IND1,IND_HV,248.019997
+29310,"Autoveicoli, rimorchi e semirimorchi",19.0,IND1,IND_HV,1179.4299901
+29320,"Autoveicoli, rimorchi e semirimorchi",19.0,IND1,IND_HV,134.06999771
+30110,Altri mezzi di trasporto,20.0,IND1,IND_HV,3574.70000265
+30120,Altri mezzi di trasporto,20.0,IND1,IND_HV,464.6799899
+30200,Altri mezzi di trasporto,20.0,IND1,IND_HV,67.409999
+30300,Altri mezzi di trasporto,20.0,IND1,IND_HV,270.55001195
+30911,Altri mezzi di trasporto,20.0,IND1,IND_HV,1.0
+30912,Altri mezzi di trasporto,20.0,IND1,IND_HV,86.439998
+30921,Altri mezzi di trasporto,20.0,IND1,IND_HV,14.52
+30922,Altri mezzi di trasporto,20.0,IND1,IND_HV,1.0
+30923,Altri mezzi di trasporto,20.0,IND1,IND_HV,8.9399996
+30990,Altri mezzi di trasporto,20.0,IND1,IND_HV,4.0
+31011,Mobilio; altri manufatti,21.0,IND2,IND_LG,298.5800002
+31012,Mobilio; altri manufatti,21.0,IND2,IND_LG,838.24999888
+31020,Mobilio; altri manufatti,21.0,IND2,IND_LG,1423.44001663
+31030,Mobilio; altri manufatti,21.0,IND2,IND_LG,136.7999981
+31091,Mobilio; altri manufatti,21.0,IND2,IND_LG,2704.6199823399998
+31092,Mobilio; altri manufatti,21.0,IND2,IND_LG,1454.41000224
+31093,Mobilio; altri manufatti,21.0,IND2,IND_LG,645.63000302
+31094,Mobilio; altri manufatti,21.0,IND2,IND_LG,3984.51002547
+31095,Mobilio; altri manufatti,21.0,IND2,IND_LG,768.4100027
+31099,Mobilio; altri manufatti,21.0,IND2,IND_LG,779.760005
+32121,Mobilio; altri manufatti,21.0,IND2,IND_LG,86.200000084
+32122,Mobilio; altri manufatti,21.0,IND2,IND_LG,2.0
+32130,Mobilio; altri manufatti,21.0,IND2,IND_LG,79.839999
+32200,Mobilio; altri manufatti,21.0,IND2,IND_LG,103.529999
+32300,Mobilio; altri manufatti,21.0,IND2,IND_LG,165.60999677
+32401,Mobilio; altri manufatti,21.0,IND2,IND_LG,66.58999802
+32402,Mobilio; altri manufatti,21.0,IND2,IND_LG,40.919998
+32501,Mobilio; altri manufatti,21.0,IND2,IND_LG,147.66999921
+32502,Mobilio; altri manufatti,21.0,IND2,IND_LG,673.35000066
+32503,Mobilio; altri manufatti,21.0,IND2,IND_LG,498.889989
+32504,Mobilio; altri manufatti,21.0,IND2,IND_LG,107.36
+32505,Mobilio; altri manufatti,21.0,IND2,IND_LG,487.48999100000003
+32910,Mobilio; altri manufatti,21.0,IND2,IND_LG,1.0
+32991,Mobilio; altri manufatti,21.0,IND2,IND_LG,3.0
+32992,Mobilio; altri manufatti,21.0,IND2,IND_LG,164.17
+32993,Mobilio; altri manufatti,21.0,IND2,IND_LG,13.99
+32994,Mobilio; altri manufatti,21.0,IND2,IND_LG,20.4299999
+32999,Mobilio; altri manufatti,21.0,IND2,IND_LG,136.73999877
+33110,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,371.670004
+33121,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,197.66999973
+33122,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,48.0399987
+33123,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,359.12999848
+33124,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,108.2099985
+33125,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,696.84000471
+33126,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,46.54
+33127,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,33.329999900000004
+33129,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,471.59999841999996
+33130,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,262.459996041
+33140,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,176.8199988
+33150,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,466.880003
+33160,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,3.9200001
+33170,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,6.8400002
+33190,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,32.25999989
+33200,Servizi di riparazione e installazione di macchinari e apparecchi,22.0,IND1,IND_LG,1582.72000865
+35110,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,632.160008499
+35120,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,47.700001
+35130,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,278.7799989
+35140,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,58.76999978
+35220,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,226.10001000000003
+35230,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,213.97999889
+35300,"Fornitura di energia elettrica, gas, vapore e aria condizionata",23.0,COM4,COM_OF,10.96
+36000,Acqua naturale; servizi di trattamento delle acque e di produzione e distribuzione d’acqua,24.0,COM4,na,703.2300048
+37000,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,185.7699987
+38110,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,2994.0499945
+38120,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,140.649998
+38210,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,324.930002699
+38220,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,17.6599999
+38311,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,71.9499994
+38321,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,236.49000289
+38322,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,142.170001098
+38323,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,119.59000028
+39000,"Servizi di smaltimento delle acque di scarico; fanghi di depurazione; servizi di raccolta, trattamento e smaltimento dei rifiuti; servizi di recupero dei materiali; servizi di decontaminazione ed altri servizi di trattamento dei rifiuti",25.0,COM4,na,87.18999998000001
+41100,Costruzioni,26.0,IND6,IND_CS,56.84000027
+41200,Costruzioni,26.0,IND6,IND_CS,4855.349993848
+42110,Costruzioni,26.0,IND6,IND_CS,627.49999479
+42120,Costruzioni,26.0,IND6,IND_CS,4.8299999
+42130,Costruzioni,26.0,IND6,IND_CS,11.23
+42210,Costruzioni,26.0,IND6,IND_CS,30.94
+42220,Costruzioni,26.0,IND6,IND_CS,401.319999
+42910,Costruzioni,26.0,IND6,IND_CS,152.6300002
+42990,Costruzioni,26.0,IND6,IND_CS,322.70999592
+43110,Costruzioni,26.0,IND6,IND_CS,102.2900007
+43120,Costruzioni,26.0,IND6,IND_CS,470.529999189
+43130,Costruzioni,26.0,IND6,IND_CS,22.77
+43210,Costruzioni,26.0,IND6,IND_CS,4328.619997108
+43220,Costruzioni,26.0,IND6,IND_CS,4948.669994566
+43290,Costruzioni,26.0,IND6,IND_CS,1220.590001149
+43310,Costruzioni,26.0,IND6,IND_CS,218.27999973
+43320,Costruzioni,26.0,IND6,IND_CS,1285.879998898
+43330,Costruzioni,26.0,IND6,IND_CS,915.44000181
+43340,Costruzioni,26.0,IND6,IND_CS,1267.310000629
+43390,Costruzioni,26.0,IND6,IND_CS,4246.64000078
+43910,Costruzioni,26.0,IND6,IND_CS,840.650002328
+43990,Costruzioni,26.0,IND6,IND_CS,679.60000785
+45110,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,2184.06000508
+45190,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,83.3599983
+45201,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,2453.20000097
+45202,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1208.82999768
+45203,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,88.14000011
+45204,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,70.06999955
+45209,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,202.72999966
+45310,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,653.52000213
+45320,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,269.31000059
+45401,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,127.87000040000001
+45402,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,61.98000001
+45403,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,136.8000001
+46110,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,79.88000011
+46120,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,180.550000098
+46130,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,354.93000015399997
+46140,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,287.21000019
+46150,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,509.4999995
+46160,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,162.1400001
+46170,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,819.829999978
+46181,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,138.38999976
+46182,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,152.77999989
+46183,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,481.99000024
+46189,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,434.720000188
+46190,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1102.15000052
+46211,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,137.8100007
+46212,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,121.630001478
+46220,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,78.01000017
+46230,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,31.529999699999998
+46241,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,4.0
+46242,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,0.27000001
+46311,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,282.99999809
+46312,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,3.16
+46321,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,139.999997
+46322,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,168.12999969999998
+46331,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,218.90000111999998
+46332,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,7.09999992
+46341,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,583.71000283
+46342,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,57.88000046
+46360,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,133.990001
+46370,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,138.60999948
+46381,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,402.72999279
+46382,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,39.480000000000004
+46383,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,3.42000002
+46389,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,283.87000089000003
+46391,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,80.17999799
+46392,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,313.69000288
+46411,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,30.640000879
+46412,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,4.0
+46419,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,3.3599999
+46421,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,266.250003
+46423,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,59.6000001
+46424,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,24.840000410000002
+46431,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,343.11000251999997
+46432,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,67.8799971
+46433,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,53.5200009
+46441,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,75.12
+46442,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,17.85
+46443,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,76.3099999
+46444,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,12.46
+46450,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,235.15999991
+46461,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,143.7700007
+46462,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.25
+46463,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,201.36999891
+46471,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,333.98999869
+46472,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,4.1500001
+46473,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,336.2899981
+46480,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,60.13000015
+46491,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,223.73999971
+46492,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,28.5599995
+46493,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,29.6099997
+46494,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,46.5899996
+46495,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,32.160000100000005
+46499,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,248.56999919
+46510,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,482.13000138
+46520,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,301.79001001
+46610,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,254.58999802
+46620,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,397.45000131
+46630,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,116.12999858
+46640,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.0
+46650,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,35.1600001
+46660,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,126.8399993
+46691,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,51.91000113
+46692,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,39.59000032
+46693,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1.0
+46699,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,703.5099985
+46710,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,429.07999693
+46721,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,230.12999892
+46722,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,87.9600011
+46731,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,328.7900019
+46732,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1112.36000226
+46733,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,0.0
+46734,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,277.95
+46741,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,542.16999643
+46742,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,565.339997
+46750,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,383.37999963
+46761,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,3.8899999999999997
+46762,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,31.37000021
+46763,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,93.10000042
+46769,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,109.75000119
+46771,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,146.32999917
+46772,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,12.0
+46900,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,625.399995798
+47111,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1350.019981
+47112,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,6338.34998803
+47113,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1007.7399894
+47114,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1450.320000308
+47115,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,41.2799999
+47191,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,473.54999941
+47192,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,361.20000163000003
+47199,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,338.53999988
+47210,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,679.26999979
+47220,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,731.500000688
+47230,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,205.97999904
+47241,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,462.63000184
+47242,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,72.13000037
+47250,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,192.25000023
+47260,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,902.389999848
+47291,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,193.59999899000002
+47292,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,36.00000026
+47293,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,40.47999971
+47299,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,509.430000098
+47300,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,911.33999999
+47410,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,203.4900009
+47420,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,362.32999979
+47430,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,65.2500002
+47511,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,313.1300017
+47512,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,143.65000031
+47521,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,964.41000117
+47522,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,61.1600002
+47523,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,301.19999872
+47524,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,229.61999788
+47531,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,57.2899997
+47532,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.6
+47540,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,370.75999981
+47591,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1132.69999831
+47592,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,374.45000074
+47593,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,46.92000002
+47594,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.1700001
+47595,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.79
+47596,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,40.99
+47599,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,119.13999974000001
+47610,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,221.17000069
+47621,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,602.020000387
+47622,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,282.5900001
+47630,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,28.7700001
+47641,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,686.280000069
+47642,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,123.78999926
+47650,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,180.20000084
+47711,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,3176.809995028
+47712,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,292.40999891
+47713,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,860.809997289
+47714,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,13.72000021
+47715,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,24.0500001
+47721,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,951.4199959
+47722,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,151.87999973
+47731,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1944.46999657
+47732,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,101.3099996
+47740,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,232.79000168
+47751,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,1062.270001109
+47752,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,183.72999957
+47761,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,755.50000045
+47762,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,218.95999926
+47770,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,854.10998992
+47781,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,15.7099999
+47782,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,620.26000246
+47783,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,554.200000858
+47784,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,241.19999887
+47785,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,23.759999999999998
+47786,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,130.5199998
+47789,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,381.68000104
+47791,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,10.1
+47792,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,30.0
+47793,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,34.48000002
+47794,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,27.04
+47810,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,375.69999931
+47820,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,546.630000338
+47890,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,299.219999839
+47911,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,312.409997472
+47912,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,11.79000012
+47913,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,58.99999969
+47991,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,467.54000231000003
+47992,"Commercio all’ingrosso e al dettaglio, riparazione di autoveicoli e motocicli",27.0,COM1+COM2+COM3,Media2,523.9700013
+49100,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,584.54999979
+49200,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,496.8699984
+49310,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1901.5599969700002
+49321,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,377.07999977
+49322,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,198.740001281
+49390,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,327.26999917
+49410,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,5945.2800019530005
+49420,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,81.96
+49501,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,37.469999
+49502,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,120.379997
+50100,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,50.9899998
+50200,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,482.5899967
+50300,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,15.0099998
+50400,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1.0
+51101,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1.0
+51102,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,62.419998
+52101,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,237.61999908
+52102,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,15.820000199999999
+52211,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,145.6199988
+52212,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,792.3800024
+52213,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,8.2599998
+52214,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,59.3
+52215,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,133.260000319
+52216,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,86.82000058
+52219,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,352.1200041
+52220,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1045.449998391
+52230,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,138.57
+52242,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,410.5199939
+52243,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,90.120003
+52244,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1149.7500094
+52291,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1113.20998786
+52292,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,1552.9400008
+53100,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,2611.13999406
+53200,Trasporto e magazzinaggio,28.0,COM2+COM4+GOV1,Media3,215.15999868
+55100,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,3240.11999959
+55201,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,132.6400001
+55202,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,9.6700001
+55203,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,58.64000069
+55204,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,117.7699997
+55205,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,775.52999905
+55300,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,182.690001
+55902,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,9.8199999
+56101,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,15361.719979519
+56102,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,1641.32000296
+56103,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,1252.6499951
+56104,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,41.599999619
+56210,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,130.65999935
+56291,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,2762.43000485
+56292,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,189.99999651000002
+56300,Servizi di alloggio e ristorazione,29.0,COM8+RES4,Media4,8983.49998933
+58110,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,105.90000008
+58130,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,180.05000432
+58140,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,92.53999981
+58190,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,21.25
+58290,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,17.8700001
+59110,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,176.84999913
+59120,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,10.39000002
+59130,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,4.3200001
+59140,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,131.840001
+59201,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,8.54000001
+59203,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,10.4800001
+60100,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,23.48000009
+60200,"Editoria, audiovisivi e attività radiotelevisive",30.0,COM8,COM_OF,62.339999399999996
+61100,Telecomunicazioni,31.0,COM8,COM_OF,631.0000017899999
+61200,Telecomunicazioni,31.0,COM8,COM_OF,29.67
+61901,Telecomunicazioni,31.0,COM8,COM_OF,89.4799999
+61902,Telecomunicazioni,31.0,COM8,COM_OF,27.28999962
+61909,Telecomunicazioni,31.0,COM8,COM_OF,59.159999808
+62010,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,2683.140001908
+62020,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,776.69999993
+62030,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,202.01999944
+62090,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,874.81999652
+63111,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,2517.689994976
+63112,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,11.08
+63113,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,27.42
+63120,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,26.79000003
+63910,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,16.96
+63990,Servizi IT e altri servizi informativi,32.0,COM8,COM_OF,113.37999958
+64191,Attività finanziarie e assicurative,33.0,COM5,COM_OF,6296.39997623
+64194,Attività finanziarie e assicurative,33.0,COM5,COM_OF,1.0
+64200,Attività finanziarie e assicurative,33.0,COM5,COM_OF,62.42
+64910,Attività finanziarie e assicurative,33.0,COM5,COM_OF,96.61999698999999
+64920,Attività finanziarie e assicurative,33.0,COM5,COM_OF,144.6100001
+64991,Attività finanziarie e assicurative,33.0,COM5,COM_OF,55.6899997
+64993,Attività finanziarie e assicurative,33.0,COM5,COM_OF,0.0
+64994,Attività finanziarie e assicurative,33.0,COM5,COM_OF,0.0
+64996,Attività finanziarie e assicurative,33.0,COM5,COM_OF,23.24999991
+65110,Attività finanziarie e assicurative,33.0,COM5,COM_OF,759.9700051
+65120,Attività finanziarie e assicurative,33.0,COM5,COM_OF,1962.72996978
+66120,Attività finanziarie e assicurative,33.0,COM5,COM_OF,6.8599999899999995
+66192,Attività finanziarie e assicurative,33.0,COM5,COM_OF,634.839999794
+66193,Attività finanziarie e assicurative,33.0,COM5,COM_OF,2.0
+66195,Attività finanziarie e assicurative,33.0,COM5,COM_OF,35.580002
+66210,Attività finanziarie e assicurative,33.0,COM5,COM_OF,183.7900002
+66220,Attività finanziarie e assicurative,33.0,COM5,COM_OF,2303.01000019
+66290,Attività finanziarie e assicurative,33.0,COM5,COM_OF,17.099999859
+66300,Attività finanziarie e assicurative,33.0,COM5,COM_OF,69.61999991
+68100,Attività immobiliari,34.0,COM4,ATT_IM,575.210001371
+68200,Attività immobiliari,34.0,COM4,ATT_IM,3864.160000812
+68310,Attività immobiliari,34.0,COM4,ATT_IM,1146.260000227
+68320,Attività immobiliari,34.0,COM4,ATT_IM,724.56000035
+69101,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,2857.7099998099998
+69102,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,634.5299999
+69201,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,4667.389996903
+69202,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,75.6900006
+69203,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,864.46000005
+70100,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,457.2600004
+70210,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,167.880000278
+70220,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,1595.600000686
+71110,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,1364.07999996
+71121,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,1422.000000939
+71122,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,520.260000688
+71123,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,1504.51999996
+71124,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,76.9599992
+71125,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,103.98999999
+71201,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,511.23999979
+71202,"Attività legali, contabilità, consulenza di gestione, studi di architettura e di ingegneria, collaudi ed analisi tecniche",35.0,COM4,COM_OF,373.61000161
+72110,Servizi di ricerca e sviluppo scientifici,36.0,COM4,COM_OF,139.18999977000001
+72190,Servizi di ricerca e sviluppo scientifici,36.0,COM4,COM_OF,409.42000165
+72200,Servizi di ricerca e sviluppo scientifici,36.0,COM4,COM_OF,65.8100001
+73110,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,698.219999939
+73120,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,64.369999898
+73200,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,103.13999809
+74101,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,316.31000048
+74102,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,565.990000109
+74103,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,289.09000113999997
+74109,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,87.63999982
+74201,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,319.789999459
+74202,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,184.97000092
+74300,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,294.10000016
+74901,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,158.040000007
+74902,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,478.79000188
+74909,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,2473.660002106
+75000,"Altre attività professionali, scientifiche e tecniche",37.0,COM4,COM_OF,369.92999975
+77110,Altre attività di servizio,38.0,COM4,COM_OF,114.07000031
+77120,Altre attività di servizio,38.0,COM4,COM_OF,5.0
+77210,Altre attività di servizio,38.0,COM4,COM_OF,106.90000055
+77220,Altre attività di servizio,38.0,COM4,COM_OF,12.0
+77291,Altre attività di servizio,38.0,COM4,COM_OF,3.0
+77299,Altre attività di servizio,38.0,COM4,COM_OF,1.0
+77310,Altre attività di servizio,38.0,COM4,COM_OF,1.0
+77320,Altre attività di servizio,38.0,COM4,COM_OF,96.60000053
+77330,Altre attività di servizio,38.0,COM4,COM_OF,90.2299999
+77340,Altre attività di servizio,38.0,COM4,COM_OF,11.29
+77350,Altre attività di servizio,38.0,COM4,COM_OF,1.0
+77391,Altre attività di servizio,38.0,COM4,COM_OF,15.0899999
+77399,Altre attività di servizio,38.0,COM4,COM_OF,302.79000291
+77400,Altre attività di servizio,38.0,COM4,COM_OF,92.04000302
+78100,Altre attività di servizio,38.0,COM4,COM_OF,50.689999
+78200,Altre attività di servizio,38.0,COM4,COM_OF,10857.96001491
+79110,Altre attività di servizio,38.0,COM4,COM_OF,213.1199994
+79120,Altre attività di servizio,38.0,COM4,COM_OF,299.82000052899997
+79901,Altre attività di servizio,38.0,COM4,COM_OF,52.42000037
+79902,Altre attività di servizio,38.0,COM4,COM_OF,95.65999998
+80100,Altre attività di servizio,38.0,COM4,COM_OF,996.04999488
+80200,Altre attività di servizio,38.0,COM4,COM_OF,1.0
+80300,Altre attività di servizio,38.0,COM4,COM_OF,58.6000001
+81100,Altre attività di servizio,38.0,COM4,COM_OF,327.90999488
+81210,Altre attività di servizio,38.0,COM4,COM_OF,8410.459935529
+81220,Altre attività di servizio,38.0,COM4,COM_OF,1838.38999295
+81291,Altre attività di servizio,38.0,COM4,COM_OF,92.200001399
+81299,Altre attività di servizio,38.0,COM4,COM_OF,342.7000039
+81300,Altre attività di servizio,38.0,COM4,COM_OF,856.330003218
+82110,Altre attività di servizio,38.0,COM4,COM_OF,155.54999895
+82190,Altre attività di servizio,38.0,COM4,COM_OF,203.97999909
+82200,Altre attività di servizio,38.0,COM4,COM_OF,319.96000190999996
+82300,Altre attività di servizio,38.0,COM4,COM_OF,138.83000124
+82911,Altre attività di servizio,38.0,COM4,COM_OF,212.2500099
+82912,Altre attività di servizio,38.0,COM4,COM_OF,20.7800002
+82921,Altre attività di servizio,38.0,COM4,COM_OF,95.56999898000001
+82922,Altre attività di servizio,38.0,COM4,COM_OF,278.25000090000003
+82991,Altre attività di servizio,38.0,COM4,COM_OF,63.869999
+82992,Altre attività di servizio,38.0,COM4,COM_OF,63.23
+82993,Altre attività di servizio,38.0,COM4,COM_OF,3.0
+82994,Altre attività di servizio,38.0,COM4,COM_OF,237.939999041
+82999,Altre attività di servizio,38.0,COM4,COM_OF,1434.32999367
+85100,Istruzione,40.0,EDU1+EDU2,EDU_00,233.0899998
+85200,Istruzione,40.0,EDU1+EDU2,EDU_00,118.8200001
+85311,Istruzione,40.0,EDU1+EDU2,EDU_00,8.3800001
+85312,Istruzione,40.0,EDU1+EDU2,EDU_00,16.16
+85320,Istruzione,40.0,EDU1+EDU2,EDU_00,103.17999909999999
+85410,Istruzione,40.0,EDU1+EDU2,EDU_00,41.23
+85420,Istruzione,40.0,EDU1+EDU2,EDU_00,34.29999898
+85510,Istruzione,40.0,EDU1+EDU2,EDU_00,284.23000014
+85520,Istruzione,40.0,EDU1+EDU2,EDU_00,207.52000025
+85530,Istruzione,40.0,EDU1+EDU2,EDU_00,302.1900001
+85592,Istruzione,40.0,EDU1+EDU2,EDU_00,788.41001382
+85593,Istruzione,40.0,EDU1+EDU2,EDU_00,129.41000025099999
+85599,Istruzione,40.0,EDU1+EDU2,EDU_00,303.029998819
+85600,Istruzione,40.0,EDU1+EDU2,EDU_00,42.83999993
+86101,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,811.5899914
+86102,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,253.12001320000002
+86210,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,1571.99999986
+86220,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,1661.19000199
+86230,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,2841.27999858
+86901,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,286.16999743
+86902,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,1461.500002029
+86903,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,697.689999898
+86904,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,84.59999979
+87100,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,1911.769992689
+87200,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,72.0500012
+87300,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,2518.07999739
+87900,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,264.3899993
+88100,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,3834.8299901100004
+88910,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,957.34002128
+88990,Sanità e assistenza sociale,41.0,COM3+COM6+COM7+RES6,na,1048.14000223
+90010,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,220.59999978
+90020,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,237.60999991
+90030,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,331.569999579
+90040,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,10.23
+91010,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,98.20000091
+91020,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,11.0499999
+91030,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,1.0
+91040,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,33.1399999
+92000,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,544.94000021
+93112,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,39.7600001
+93113,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,86.619999
+93119,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,31.4799997
+93120,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,273.95999709
+93130,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,234.88999882000002
+93191,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,33.13999967
+93199,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,142.74000007
+93210,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,59.2
+93291,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,230.88999807
+93292,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,219.33999803
+93293,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,164.73000021
+93299,"Attività artistiche, di intrattenimento e divertimento",42.0,COM8+COM9,na,244.1100012898
+95110,Altre attività di servizi,43.0,COM3,COM_OF,170.81000013
+95120,Altre attività di servizi,43.0,COM3,COM_OF,46.35999999
+95210,Altre attività di servizi,43.0,COM3,COM_OF,72.04000022
+95220,Altre attività di servizi,43.0,COM3,COM_OF,166.82999981
+95230,Altre attività di servizi,43.0,COM3,COM_OF,90.44000008
+95240,Altre attività di servizi,43.0,COM3,COM_OF,445.3400022
+95250,Altre attività di servizi,43.0,COM3,COM_OF,41.2299998
+95290,Altre attività di servizi,43.0,COM3,COM_OF,215.500000241
+96011,Altre attività di servizi,43.0,COM3,COM_OF,690.92000091
+96012,Altre attività di servizi,43.0,COM3,COM_OF,198.759999078
+96020,Altre attività di servizi,43.0,COM3,COM_OF,5606.050001016
+96030,Altre attività di servizi,43.0,COM3,COM_OF,576.5199989
+96041,Altre attività di servizi,43.0,COM3,COM_OF,404.78000066
+96042,Altre attività di servizi,43.0,COM3,COM_OF,1.9
+96090,Altre attività di servizi,43.0,COM3,COM_OF,1280.289996748

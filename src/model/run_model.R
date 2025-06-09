@@ -1,10 +1,19 @@
-library(matrixStats)
-library(readxl)
-library(readr)
-library(dplyr)
 library(glue)
+library(dplyr)
+library(readr)
+library(readxl)
+library(this.path)
+library(matrixStats)
 
-setwd("/mnt/beegfs/lcesarini/2025_p_irio/")
+# Function to go up N directories
+go_up_n_dirs <- function(path = this.path(), n = 1) {
+  for (i in seq_len(n)) {
+    path <- dirname(path)
+  }
+  return(path)
+}
+
+setwd(go_up_n_dirs(n = 3))
 
 TradLeontief=0  #0=modified Leontief 
 #TradLeontief=1  #1=traditional Leontief
