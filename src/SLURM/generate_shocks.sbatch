@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=120:00:00
 #SBATCH --mem-per-cpu=256GB
-#SBATCH --nodelist=cn07
+#SBATCH --nodelist=cn03
 #SBATCH --account=PR_climate
 
 echo "start of job"
@@ -76,6 +76,7 @@ Rscript shocks/create_input.R $year $id
 conda activate my_xclim_env
 # The arguments needed for py script are: 1) name of the intermediate file computed at the previous step, and again, the region (that could be extracted from the name file, to decide)
 ./shocks/create_input.py -id $id -yr $year
+# ./shocks/create_input.py -id 40863 -yr 2017
 
 rm ../test/*intermediate*
 

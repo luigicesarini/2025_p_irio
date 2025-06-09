@@ -1,0 +1,32 @@
+ERROR 1: PROJ: internal_proj_create_from_database: /home/luigi.cesarini/.conda/envs/my_xclim_env/share/proj/proj.db contains DATABASE.LAYOUT.VERSION.MINOR = 2 whereas a number >= 3 is expected. It comes from another PROJ installation.
+Traceback (most recent call last):
+  File "rasterio/crs.pyx", line 592, in rasterio.crs.CRS.from_epsg
+  File "rasterio/_err.pyx", line 289, in rasterio._err.exc_wrap_int
+rasterio._err.CPLE_AppDefinedError: PROJ: internal_proj_create_from_database: /home/luigi.cesarini/.conda/envs/my_xclim_env/share/proj/proj.db contains DATABASE.LAYOUT.VERSION.MINOR = 2 whereas a number >= 3 is expected. It comes from another PROJ installation.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 114, in <module>
+    repro_to_wgs84(filename_wd,NR,type_flood)
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 70, in repro_to_wgs84
+    wd_clip.rio.write_crs("EPSG:3035").rio.reproject("EPSG:4326").rio.to_raster(f'test/Event_{id}_IT_{NR}_{year}_{type_flood}_4326.tif')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luigi.cesarini/.conda/envs/my_xclim_env/lib/python3.11/site-packages/rioxarray/raster_array.py", line 436, in reproject
+    dst_affine, dst_width, dst_height = _make_dst_affine(
+                                        ^^^^^^^^^^^^^^^^^
+  File "/home/luigi.cesarini/.conda/envs/my_xclim_env/lib/python3.11/site-packages/rioxarray/raster_array.py", line 144, in _make_dst_affine
+    dst_affine, dst_width, dst_height = rasterio.warp.calculate_default_transform(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luigi.cesarini/.conda/envs/my_xclim_env/lib/python3.11/site-packages/rasterio/env.py", line 413, in wrapper
+    return f(*args, **kwds)
+           ^^^^^^^^^^^^^^^^
+  File "/home/luigi.cesarini/.conda/envs/my_xclim_env/lib/python3.11/site-packages/rasterio/warp.py", line 556, in calculate_default_transform
+    dst_affine, dst_width, dst_height = _calculate_default_transform(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "rasterio/_warp.pyx", line 726, in rasterio._warp._calculate_default_transform
+  File "rasterio/crs.pyx", line 790, in rasterio.crs.CRS.from_user_input
+  File "rasterio/crs.pyx", line 852, in rasterio.crs.CRS.from_string
+  File "rasterio/crs.pyx", line 596, in rasterio.crs.CRS.from_epsg
+rasterio.errors.CRSError: The EPSG code is unknown. PROJ: internal_proj_create_from_database: /home/luigi.cesarini/.conda/envs/my_xclim_env/share/proj/proj.db contains DATABASE.LAYOUT.VERSION.MINOR = 2 whereas a number >= 3 is expected. It comes from another PROJ installation.
+srun: error: cn07: task 0: Exited with exit code 1

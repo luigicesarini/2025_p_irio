@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 77, in <module>
+    parser = argparse.ArgumentParser(description="A simple command-line argument parser example.")
+             ^^^^^^^^
+NameError: name 'argparse' is not defined
+srun: error: cn07: task 0: Exited with exit code 1

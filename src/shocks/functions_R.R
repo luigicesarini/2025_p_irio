@@ -8,7 +8,7 @@ library(jsonlite) %>% suppressPackageStartupMessages()
 setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
 corr_sect <- jsonlite::fromJSON("res/correspondance_sector.json")
-resto_time_hazus <- read.csv("res/restoration_times_hazus.csv")
+resto_time_hazus <- read.csv("res/shocks/restoration_times_hazus.csv")
 
 
 return_resto_time <- function(df,sector,flood_depth){
@@ -71,4 +71,3 @@ get_rt_hit  <- function(all_hit,tot_addetti_by_reg){
     return(df_agg_sect_hit)
 
 }
-

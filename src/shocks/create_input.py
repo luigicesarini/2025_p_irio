@@ -10,7 +10,7 @@ from tqdm import tqdm
 import warnings 
 warnings.filterwarnings('ignore') 
 
-from functions_python import get_shock_perc
+from functions_python import get_shock_perc,fill_df_shock
 
 def get_unlist(ll:list):
     ul=[]
@@ -47,7 +47,6 @@ MAIN
 if __name__ == "__main__":
 
     regioni=pd.read_csv("res/sigle.csv").Regione.unique()
-    # print(regioni)
 
     lf=glob(f"test/tot_addetti_by_sector_intermediate_{id_event}_{year}_*.csv")
 
@@ -55,9 +54,28 @@ if __name__ == "__main__":
     
     assert np.isin(regions,regioni).all(), "Some regions are missing"
 
+    # print(lf)
+
     for reg in regions:
         df_event=pd.read_csv(f"test/tot_addetti_by_sector_intermediate_{id_event}_{year}_{reg}.csv")
         gdf_reg_byateco=pd.read_csv(f"out/shocks/tot/tot_addetti_by_ateco_{reg}.csv")
 
         df=get_shock_perc(df_event,gdf_reg_byateco)
-        df.to_csv(f"out/shocks/hit/{year}/tot_addetti_by_ateco_perc_{id_event}_{year}_{reg}.csv",index=False)
+        fill_df_shock(df).to_csv(f"out/shocks/hit/{year}/tot_addetti_by_ateco_perc_{id_event}_{year}_{reg}.csv",index=False)
+        # df_whole=pd.DataFrame(columns=['n_sector','addetti_ul']+[f'{i}' for i in range(1,101)])
+        # df_whole['n_sector']=np.arange(3,44)
+
+        # df_whole.columns=df_whole.columns.astype(str)
+        # df.columns=df.columns.astype(str)
+
+        # df_whole.iloc[np.where(np.isin(df_whole.n_sector,df.n_sector))[0],np.where(np.isin(df_whole.columns,df.columns))[0][1:]]=df.iloc[:,1:].values
+
+        # actual_dt_col=np.insert(np.where(np.isin(df_whole.columns.astype(str),df.columns.astype(str)))[0][2:]-1,0,0)
+        # # print(df)
+        # range_to_fill=[np.arange(actual_dt_col[i-1]+1,actual_dt_col[i]) for i in np.arange(1,actual_dt_col.shape[0])]
+
+        # for i_not_na,r_na in zip(actual_dt_col[1:],range_to_fill):
+        #     df_whole.loc[np.where(np.isin(df_whole.n_sector,df.n_sector))[0],[f"{i}" for i in r_na]]=np.repeat(df[f'{i_not_na}'].values.reshape(-1,1),axis=1,repeats=r_na.shape[0])
+
+        # # print(df_whole)                
+        # df.to_csv(f"out/shocks/hit/{year}/tot_addetti_by_ateco_perc_{id_event}_{year}_{reg}.csv",index=False)

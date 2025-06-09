@@ -118,3 +118,5 @@ for  id, year in tqdm(df_id_event.values):
         # plt.savefig(f"out/EVENT_{id}_{NR}.png")
 
         # plt.close()
+
+        # gdalwarp -t_srs EPSG:4326 -r bilinear input_file.tif output_file_3035.tif

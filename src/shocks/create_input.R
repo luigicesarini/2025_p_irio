@@ -1,3 +1,5 @@
+#!/home/luigi.cesarini/.conda/envs/r_symi/bin/R
+
 suppressPackageStartupMessages(library(dplyr))
 
 library(sf) %>% suppressPackageStartupMessages() %>% suppressWarnings()
@@ -5,6 +7,24 @@ library(glue) %>% suppressPackageStartupMessages() %>% suppressWarnings()
 library(readxl) %>% suppressPackageStartupMessages() %>% suppressWarnings()
 library(stringr) %>% suppressPackageStartupMessages() %>% suppressWarnings()
 library(jsonlite) %>% suppressPackageStartupMessages()  %>% suppressWarnings()
+
+
+# library(ggplot2)
+# library(gganimate)
+
+# ggplot(mtcars, aes(factor(cyl), mpg)) + 
+#   geom_boxplot() + 
+#   # Here comes the gganimate code
+#   transition_states(
+#     gear,
+#     transition_length = 2,
+#     state_length = 1
+#   ) +
+#   enter_fade() + 
+#   exit_shrink() +
+#   ease_aes('sine-in-out')
+
+# anim_save("filename.gif", animation = last_animation())
 
 setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
@@ -17,8 +37,17 @@ args=commandArgs(trailingOnly=TRUE)
 # 2) id event
 # The region is later extracted from the list of files for the given ID and the year
 
-year <- args[1]
-id_event <- args[2]
+DEBUG=FALSE
+if (DEBUG) {
+    year <- 2017
+    id_event <- 40863
+}else {
+    year <- args[1]
+    id_event <- args[2]
+}
+
+
+
 
 files <- list.files(glue('out/vector/{year}/'),glue("EVENT_{id_event}_{year}*"),full.names=TRUE)
 
@@ -30,8 +59,6 @@ for (reg in regions){
   df_addetti_reg <- read.csv(glue("out/shocks/tot/tot_addetti_by_ateco_{reg}.csv"))
 
   df_agg_sect_hit <- get_rt_hit(df_hit,df_addetti_reg)
-
-
 
   df_addetti_reg %>% 
       group_by(n_sector) %>% 
@@ -51,7 +78,7 @@ for (reg in regions){
   df_agg_sect_hit %>% 
       group_by(n_sector) %>% 
       summarise(tot_addetti_hit=sum(addetti_ul))  %>% 
-      left_join(df_agg_sect_hit_wide,.,by="n_sector")-> df_agg_sect_hit_tot
+      left_join(.,df_agg_sect_hit_wide,by="n_sector")-> df_agg_sect_hit_tot
 
   # left_join(df_addetti_reg_tot,df_agg_sect_hit_wide,by="n_sector")-> df_agg_sect_hit_tot
 

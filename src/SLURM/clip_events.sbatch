@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=64
 #SBATCH --time=120:00:00
 #SBATCH --mem-per-cpu=256GB
-#SBATCH --nodelist=cn07
+#SBATCH --nodelist=cn01
 #SBATCH --account=PR_climate
 
 echo "start of job"
@@ -30,7 +30,7 @@ echo $WORKDIR
 module purge
 conda init bash
 source /home/luigi.cesarini/.bashrc
-conda activate my_xclim_env
+conda activate geo
 
 find ./resultsSLURM/* -type f ! -newermt "$DATE" -exec rm {} +
 
@@ -38,7 +38,7 @@ find ./resultsSLURM/* -type f ! -newermt "$DATE" -exec rm {} +
 echo ""
 echo ----------------------------------------------
 echo Calling
-echo srun --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK python ./clip_ext_wd.py -id 40655 -yr 2002
+echo srun --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK python ./clip/clip_ext_wd.py -id 40655 -yr 2002
 echo ----------------------------------------------
 
 # echo "Processing CSV"
@@ -60,7 +60,8 @@ echo ----------------------------------------------
 # done < "$csv_file"
 
 
-srun --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK python ./clip_ext_wd.py -id 40655 -yr 2002
+# srun --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK python ./clip_ext_wd.py -id 40655 -yr 2002
+srun --ntasks=1 --nodes=1 --cpus-per-task=$SLURM_CPUS_PER_TASK python ./clip/clip_events_bilanci.py -id 40903 -yr 2020 -reg Liguria
 # wait
 
 

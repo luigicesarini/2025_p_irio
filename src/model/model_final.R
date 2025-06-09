@@ -1,4 +1,8 @@
-runModel<-function(IO,measures,coefficienti_consumo,params,rounds,LD_Emilia_hazus,LD_Emilia_ins_M,LossRatio_Emilia_I,scenario,epsilon){
+runModel<-function(
+  IO,measures,coefficienti_consumo,params,rounds,
+  LD_Emilia_hazus,LD_Emilia_ins_M,
+  LossRatio_Emilia_I,scenario,epsilon,
+  id_start_reg,id_end_reg){
 
 library(matrixStats)
 
@@ -136,7 +140,7 @@ c_all_delivered=c(rep(0,nbRounds))
 laborAvailable1=matrix(100,nrow=1, ncol=n)
 #The leontief coefficient for labor is calculated on workers actually needed for production (i.e. 100)
 laborLeontiefCoefficients=(laborAvailable1)/production     #(production=rowSums(IO[1:n,]))
-laborLeontiefCoefficientsEmilia=laborLeontiefCoefficients[302:344]
+laborLeontiefCoefficientsEmilia=laborLeontiefCoefficients[id_start_reg:id_end_reg]
 
 #Same logic for the PRODUCTION SHOCKS, expressed as % deviation from initial labor available to each industry, normalized to 100 (plus 20 to keep excess capacity)
 productionShock=matrix(0, nrow=n, ncol=nbRounds)
@@ -160,7 +164,9 @@ shocks[,1]<-c(1:43)
 
 if(scenario==1){
   #HAZUS
-  LD_Emilia<-LD_Emilia_hazus[,-1]
+  # LD_Emilia<-LD_Emilia_hazus[,-1]
+  LD_Emilia<-LD_Emilia_hazus
+  # paste('Size LD Emilia:',dim(LD_Emilia)) %>% print()
   shocks[,2:101]<-as.matrix(LD_Emilia[,2:101])
   LD_Emilia<-as.data.frame(shocks)
   LD_Emilia[1,2:32]<- laborShock_Agri 
@@ -185,17 +191,19 @@ if(scenario==2){
   #shocks to inventories
   LR_Emilia<-LossRatio_Emilia_I[,-1]
   LR<-matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1)
-  LR_Emilia<-LR_Emilia[,-1]
+  # LR_Emilia<-LR_Emilia[,-1]
   shocks_I<-matrix(0,nrow=nrow(LR_Emilia), ncol=ncol(LR_Emilia)+8)
   shocks_I[,1:100]<-as.matrix(LR_Emilia)
-  LR[302:344,2:(nbRounds+1)]<-as.matrix(shocks_I)
+  LR[id_start_reg:id_end_reg,2:(nbRounds+1)]<-as.matrix(shocks_I)
   LR<-as.data.frame(LR)
 }
 
 #the following is to run after having decided which shock to use:
 LD<-matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1)
+# paste(nSectors*(nItalianRegions-1),nbRounds+1) %>% print()
 LD_Emilia<-LD_Emilia[,-1]
-LD[302:344,2:(nbRounds+1)]<-as.matrix(LD_Emilia)
+#Here sets the shocks at the rows corresponding to the sectors of Emilia Romagna
+LD[id_start_reg:id_end_reg,2:(nbRounds+1)]<-as.matrix(LD_Emilia)
 LD<-as.data.frame(LD)
 
 
@@ -446,7 +454,7 @@ for(t in 1:nbRounds){
   }
   maxOutputGivenLabour=laborAvailable/laborLeontiefCoefficients
   capacity[t,]=maxOutputGivenLabour
-  capacity_EROM[t,]=maxOutputGivenLabour[1,302:344]
+  capacity_EROM[t,]=maxOutputGivenLabour[1,id_start_reg:id_end_reg]
   expectations_l=pmin(expectations,maxOutputGivenLabour)     #eq3
   
   vec_inventoryShock<-as.numeric(1-t(inventoryShock[,t]))
@@ -481,18 +489,18 @@ for(t in 1:nbRounds){
   #if productioin constrained by labor and demand>production feasible, then allow sectors not subject to labor input exogenous constraints 
   #(i.e. those having >= workers than at the beginning) to hire additional workers
   hiringSectors=which(((laborAvailable[1,]/laborLeontiefCoefficients[1,])<pmin(maxOutputGivenImports,colMins(weightedOutput)))&(laborAvailable[1,]>=laborAvailable1[1,])&(expectations>t(maxOutputFeasible)))
-  hiringSectors_EROM=which(((laborAvailable[1,302:344]/laborLeontiefCoefficients[1,302:344])<pmin(maxOutputGivenImports[302:344],colMins(weightedOutput[302:344,302:344])))&(laborAvailable[1,302:344]>=laborAvailable1[1,302:344])&(expectations[302:344]>t(maxOutputFeasible[302:344])))
+  hiringSectors_EROM=which(((laborAvailable[1,id_start_reg:id_end_reg]/laborLeontiefCoefficients[1,id_start_reg:id_end_reg])<pmin(maxOutputGivenImports[id_start_reg:id_end_reg],colMins(weightedOutput[id_start_reg:id_end_reg,id_start_reg:id_end_reg])))&(laborAvailable[1,id_start_reg:id_end_reg]>=laborAvailable1[1,id_start_reg:id_end_reg])&(expectations[id_start_reg:id_end_reg]>t(maxOutputFeasible[id_start_reg:id_end_reg])))
   Num_hiringSectors[t]<-length(hiringSectors)
   Num_hiringSectors_EROM[t]<-length(hiringSectors_EROM)
   laborAvailable[hiringSectors]=expectations[hiringSectors]*laborLeontiefCoefficients[hiringSectors]
   maxOutputGivenLabour=laborAvailable/laborLeontiefCoefficients
   capacity2[t,]=maxOutputGivenLabour
-  capacity_EROM2[t,]=maxOutputGivenLabour[1,302:344]
+  capacity_EROM2[t,]=maxOutputGivenLabour[1,id_start_reg:id_end_reg]
   
   expectations_l=pmin(expectations,maxOutputGivenLabour)
   maxOutputFeasible=pmin(maxOutputGivenLabour,pmin(maxOutputGivenImports,colMins(weightedOutput)))
   bottlenecks[,t]=colMins(weightedOutput)
-  bottlenecks_EROM[,t]=colMins(weightedOutput[302:344,302:344])
+  bottlenecks_EROM[,t]=colMins(weightedOutput[id_start_reg:id_end_reg,id_start_reg:id_end_reg])
   xxx<-round(colMins(maxOutputGivenIntermediateInputsLeontief),digits=2)
   yyy<-round(colMins(weightedOutput),digits=2)
   for (i in 1:(nSectors*nItalianRegions)) {
@@ -510,10 +518,10 @@ for(t in 1:nbRounds){
     }
   }
   
-  check1_EROM<-check1[302:344,]
-  check2_EROM<-check2[302:344,]
-  check3_EROM<-check3[302:344,]
-  check4_EROM<-check4[302:344,]
+  check1_EROM<-check1[id_start_reg:id_end_reg,]
+  check2_EROM<-check2[id_start_reg:id_end_reg,]
+  check3_EROM<-check3[id_start_reg:id_end_reg,]
+  check4_EROM<-check4[id_start_reg:id_end_reg,]
   
   #every sector computes the inputs required to satisfy its expected total demand given by observed current period final demand and past-period orders by opther sectors
   inputsRequiredGivenDemand=A * rep(expectations_l, rep.int(nrow(A),length(expectations_l)))
@@ -542,7 +550,7 @@ for(t in 1:nbRounds){
       check5[i,t]<-1   #actual demand is greater than expected demand (sectors might have produced less)
     }
   }
-  check5_EROM<-check5[302:344,]
+  check5_EROM<-check5[id_start_reg:id_end_reg,]
   pastfd=fd+Exp
   
   demandTotal[t]<-sum(demand+Exp)
@@ -582,7 +590,7 @@ for(t in 1:nbRounds){
     productionDelivered=maxOutputFeasible
   }
   bottlenecks[,t]=bottlenecks[,t]==productionDelivered
-  bottlenecks_EROM[,t]=bottlenecks_EROM[,t]==productionDelivered[,302:344]
+  bottlenecks_EROM[,t]=bottlenecks_EROM[,t]==productionDelivered[,id_start_reg:id_end_reg]
   for(i in 1:n){
     if(bottlenecks[i,t]==1 & check3[i,t]==1){
       bottlenecks_inputs[i,t]=1

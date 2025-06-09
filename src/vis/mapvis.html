@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive GeoTIFF Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/geotiff"></script>
+    <style>
+        #map { height: 600px; width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // const tiffUrl = 'http://127.0.0.1:5501/river/2019/Event_40889_IT_2019_River.tif';
+        
+        const tiffUrl = '/mnt/beegfs/lcesarini/2025_p_irio/test/Event_40769_IT_Veneto_2010_River_4326.tif';
+
+        // Blues color palette parameters (ColorBrewer 9-class Blues)
+        const BLUES_PALETTE = {
+            start: [247, 251, 255],  // lightest blue
+            end: [8, 48, 107]         // darkest blue
+        };
+        async function loadGeoTIFF() {
+            // Load GeoTIFF
+            const tiff = await GeoTIFF.fromUrl(tiffUrl);
+            const image = await tiff.getImage();
+            
+            // Get geographic bounds [minX, minY, maxX, maxY]
+            const bbox = image.getBoundingBox();
+            const bounds = [[bbox[1], bbox[0]], [bbox[3], bbox[2]]];
+            
+            // Get raster data
+            const width = image.getWidth();
+            const height = image.getHeight();
+            const raster = await image.readRasters();
+
+            // Convert to grayscale (using first band)
+            const noDataValue = NaN;
+            console.log(Number.isNaN(noDataValue));
+            // noDataValue = noDataValue || 0;
+            const data = raster[0];
+            // console.log(data);
+            
+            // Create canvas
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            const imageData = ctx.createImageData(width, height);
+            
+            // Calculate min/max excluding NoData values
+            let min = Infinity;
+            let max = -Infinity;
+            for (let i = 0; i < data.length; i++) {
+                const value = data[i];
+                if (value === noDataValue) continue;
+                if (value < min) min = value;
+                if (value > max) max = value;
+            }
+            const range = max - min || 1; // Prevent division by zero
+            
+            
+            // Create image data with Blues palette and transparency
+            for (let i = 0; i < data.length; i++) {
+                const value = data[i];
+                const alphaPosition = i * 4 + 3;
+                
+                // Handle NoData (transparent)
+                if (value === 0 || Number.isNaN(value)) {
+                    imageData.data[alphaPosition] = 0;
+                    continue;
+                }
+
+                // Normalize value to 0-1 range
+                const normalized = (value - min) / range;
+                
+                // Interpolate between Blues palette colors
+                const r = BLUES_PALETTE.start[0] + 
+                    (BLUES_PALETTE.end[0] - BLUES_PALETTE.start[0]) * normalized;
+                const g = BLUES_PALETTE.start[1] + 
+                    (BLUES_PALETTE.end[1] - BLUES_PALETTE.start[1]) * normalized;
+                const b = BLUES_PALETTE.start[2] + 
+                    (BLUES_PALETTE.end[2] - BLUES_PALETTE.start[2]) * normalized;
+
+                // Set pixel values
+                imageData.data[i * 4] = Math.round(r);
+                imageData.data[i * 4 + 1] = Math.round(g);
+                imageData.data[i * 4 + 2] = Math.round(b);
+                imageData.data[alphaPosition] = 255; // Opaque for data pixels
+            }
+
+            ctx.putImageData(imageData, 0, 0);
+
+            // Create Leaflet map
+            const map = L.map('map').fitBounds(bounds);
+
+            // Add base map
+            // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            //     attribution: '© OpenStreetMap contributors'
+            // }).addTo(map);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+
+            // Add GeoTIFF overlay
+            L.imageOverlay(canvas.toDataURL(), bounds).addTo(map);
+            map.on('click', (e) => {
+                const latlng = e.latlng;
+                const x = Math.floor((latlng.lng - bbox[0]) / (bbox[2] - bbox[0]) * width);
+                const y = Math.floor((latlng.lat - bbox[1]) / (bbox[3] - bbox[1]) * height);
+                const value = data[y * width + x];
+                console.log(`Value at (${latlng.lat}, ${latlng.lng}): ${value}`);
+            });
+            // Add a scale bar
+            L.control.scale({ position: 'bottomright' }).addTo(map);
+            // Add a legend
+            const legend = L.control({ position: 'bottomleft' });
+        }
+
+        loadGeoTIFF().catch(console.error);
+
+        // For value display:
+        // map.on('mousemove', (e) => {
+
+        // // Get raster value at position
+
+        // });
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/usr/bin/id: cannot find name for group ID 2000
+/usr/bin/id: cannot find name for user ID 2019
+Traceback (most recent call last):
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 100, in <module>
+    NR=args.reg#"Emilia-Romagna"
+       ^^^^^^^^
+AttributeError: 'Namespace' object has no attribute 'reg'
+srun: error: cn01: task 0: Exited with exit code 1

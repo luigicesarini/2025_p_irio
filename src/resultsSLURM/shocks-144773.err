@@ -1,0 +1,11 @@
+Joining with `by = join_by(ateco_ul_2007)`
+Joining with `by = join_by(ateco_ul_2007)`
+Joining with `by = join_by(ateco_ul_2007)`
+Joining with `by = join_by(ateco_ul_2007)`
+Joining with `by = join_by(ateco_ul_2007)`
+Joining with `by = join_by(ateco_ul_2007)`
+Traceback (most recent call last):
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./shocks/create_input.py", line 80, in <module>
+    print(df_whole)                
+          ^^^^^^^^
+NameError: name 'df_whole' is not defined

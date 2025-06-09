@@ -1,0 +1,29 @@
+start of job
+eliminating results slurm older than 10 days
+2025-04-28 13:52:35
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+srun --ntasks=1 --nodes=1 --cpus-per-task=64 python ./clip/clip_ext_wd.py -id 40655 -yr 2002
+----------------------------------------------
+Namespace(year=2014, id='40829', region='Toscana', type_flood=None)
+Flooded firms in Toscana for event 40829 in 2014 are 23702 out of 352009
+
+The job was done in 233 seconds
+
+Mon Apr 28 13:56:28 CEST 2025
+end of job

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 169, in <module>
+    popup=folium.features.GeoJsonPopup(fields=gdf.columns.values.tolist()[:-1]),
+                                              ^^^
+NameError: name 'gdf' is not defined
+srun: error: cn07: task 0: Exited with exit code 1
