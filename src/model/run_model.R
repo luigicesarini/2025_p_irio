@@ -63,8 +63,10 @@ sigle_reg <- read.csv("res/correspondance_regions.csv")
 #Find all the regions linked to an eventID
 ID <- args[1]
 YEAR <- args[2]
-file_shock_reg <- list.files(glue('out/shocks/hit/{YEAR}/'),glue('{ID}'),full.names=TRUE)[c(1:10,12:13)]
-file_shock_reg <- list.files(glue('out/shocks/hit/{YEAR}/'),glue('{ID}'),full.names=TRUE)[11]
+file_shock_reg <- list.files(glue('out/shocks/hit/{YEAR}/'),glue('{ID}'),full.names=TRUE)
+# Here i was trying to debug where the big negative peak were happening
+# file_shock_reg <- list.files(glue('out/shocks/hit/{YEAR}/'),glue('{ID}'),full.names=TRUE)[c(1:10,12:13)]
+# file_shock_reg <- list.files(glue('out/shocks/hit/{YEAR}/'),glue('{ID}'),full.names=TRUE)[11]
 
 # ID <- 'EROM'
 # file_shock_reg <- list.files('out/shocks/hit/',glue('{ID}'),full.names=TRUE)
