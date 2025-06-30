@@ -26,3 +26,8 @@ conda activate my_xclim_env
 
 rm ../test/*intermediate*
 ----------------------------------------------
+
+The job was done in 365 seconds
+
+Mon Jun 30 19:41:13 CEST 2025
+end of job
