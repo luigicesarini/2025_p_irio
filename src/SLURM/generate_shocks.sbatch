@@ -16,7 +16,7 @@ echo "start of job"
 start_time=$(date +%s)
 
 
-DAY=10
+DAY=100
 echo "eliminating results slurm older than $DAY days"
 date +'%Y-%m-%d %H:%M:%S'
 

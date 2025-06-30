@@ -71,3 +71,5 @@ get_rt_hit  <- function(all_hit,tot_addetti_by_reg){
     return(df_agg_sect_hit)
 
 }
+
+

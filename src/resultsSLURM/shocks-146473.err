@@ -1,6 +1,0 @@
-Joining with `by = join_by(ateco_ul_2007)`
-Error in cut.default(., breaks = c(-Inf, .)) : 
-  invalid number of intervals
-Calls: get_rt_hit -> return_resto_time -> %>% -> cut -> cut.default
-Execution halted
-rm: cannot remove '../test/*intermediate*': No such file or directory

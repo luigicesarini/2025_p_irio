@@ -7,8 +7,10 @@ library(data.table)
 setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
 sigla_region <- 'TOS'
-
-readRDS(glue("test/Output_{sigla_region}_2025.rds")) -> result
+id <- 40863
+year <- 2017
+# readRDS(glue("test/Output_EROM_2023.rds")) -> result
+# readRDS(glue("test/Output_TOS_2025.rds")) -> result
 
 #What is inside the result object?
 #######################################################
@@ -62,15 +64,17 @@ readRDS(glue("test/Output_{sigla_region}_2025.rds")) -> result
 
 
 
-result[[2]] %>% dim()
-result[[3]] %>% dim()
-result[[4]] %>% dim()
-result[[8]][,1]
+# result[[2]] %>% dim()
+# result[[3]] %>% dim()
+# result[[4]] %>% dim()
+# result[[8]][,1]
 
+readRDS(glue("test/Output_{id}_{year}.rds")) -> result
 
 # GDP by region as in Fig.5
 result[[9]] %>% 
-    data.frame() %>% 
+    data.frame() %>% #View()
+    # slice(1:30) %>% 
     tibble::rownames_to_column(var="Weeks") %>% 
         melt(id.vars="Weeks") %>% 
         # filter(variable=='X8') %>% 
@@ -95,6 +99,7 @@ result[[38]] %>% dim()
 
 result[[28]] %>% 
     data.frame() %>% 
+    slice(1,30) %>% 
     tibble::rownames_to_column(var="Weeks") %>% 
         melt(id.vars="Weeks") %>% 
         # filter(variable=='X8') %>% 
@@ -109,3 +114,17 @@ result[[28]] %>%
 
 
 
+
+
+
+taa <- read.csv("/mnt/beegfs/lcesarini/2025_p_irio/out/shocks/hit/2017/tot_addetti_by_ateco_perc_40863_2017_Trentino-Alto Adige.csv")
+taa %>% dim
+
+
+range(taa[,3:102])
+
+
+
+for(i in 3:101){
+    print(all(taa[,i] >= taa[,i+1]))
+}

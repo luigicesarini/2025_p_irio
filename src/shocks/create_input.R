@@ -39,14 +39,12 @@ args=commandArgs(trailingOnly=TRUE)
 
 DEBUG=FALSE
 if (DEBUG) {
-    year <- 2017
-    id_event <- 40863
+    year <- 1956
+    id_event <- 40084
 }else {
     year <- args[1]
     id_event <- args[2]
 }
-
-
 
 
 files <- list.files(glue('out/vector/{year}/'),glue("EVENT_{id_event}_{year}*"),full.names=TRUE)
@@ -84,3 +82,54 @@ for (reg in regions){
 
   write.csv(df_agg_sect_hit_tot,glue("test/tot_addetti_by_sector_intermediate_{id_event}_{year}_{reg}.csv"),row.names=FALSE)
 }
+
+
+# df_agg_sect_hit %>% filter(n_sector==5) %>% sum()
+
+# df_hit %>% filter(!is.na(WD),ateco_ul_2007 >=13100,ateco_ul_2007 <=15202) %>% pull(addetti_ul) %>% sum()
+
+# df_hit %>% filter(ateco_ul_2007 >=13100,ateco_ul_2007 <=15202) %>% pull(addetti_ul) %>% sum()
+
+# df_hit %>% group_by(ateco_ul_2007) %>% summarise(n=n())
+
+# df_hit %>% colnames()
+
+# df_addetti_reg %>% filter(n_sector==5) %>% pull(addetti_ul) %>% sum()
+
+# df_hit <- left_join(df_hit,df_addetti_reg %>% select(-addetti_ul),by=c("ateco_ul_2007"))  %>% st_set_geometry(NULL)
+
+# df_hit$hazus_weeks <- c(0)
+# df_hit$wh_f <- df_hit$WD * 3.28084
+
+
+
+# resto_time_list <- c()
+# SECTOR <- df_hit$hazus_sector[i]
+# df_hit$hazus_sector %>% unique()
+# if(grepl("+", SECTOR, ignore.case = FALSE, perl = FALSE)) SECTOR  <- str_split(SECTOR, "[+]")[[1]]
+        
+
+
+# df_hit$wh_f %>% range(.,na.rm=TRUE)
+
+# resto_time_hazus$flood_depth %>% unique() %>% sort()
+
+
+# bin_wh <- c(-4,0,4,8,12,10000)
+
+# cut(df_hit %>% filter(!is.na(wh_f)) %>% pull(wh_f) %>% .[1:10], breaks = c(-Inf,bin_wh))
+
+
+
+# df_hit %>% 
+#     mutate(
+#         bin_wh=case_when(
+#             wh_f < 0 ~ -4,
+#             wh_f == 0 ~ 0,
+#             wh_f > 0 & wh_f <= 4 ~ 4,
+#             wh_f > 4 & wh_f <= 8 ~ 8,
+#             wh_f > 8 & wh_f <= 12 ~ 12,
+#             wh_f > 12 ~ 10000,
+#             TRUE ~ NA
+#         )
+#     )  %>% View()

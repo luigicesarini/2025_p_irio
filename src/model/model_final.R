@@ -1,9 +1,28 @@
 runModel<-function(
   IO,measures,coefficienti_consumo,params,rounds,
-  LD_Emilia_hazus,LD_Emilia_ins_M,
+  LD_hazus,LD_Emilia_ins_M,
   LossRatio_Emilia_I,scenario,epsilon,
-  id_start_reg,id_end_reg){
-
+  vector_idx,n_reg_flooded
+  ){
+#' runModel
+#'
+#' Runs the IRIO model for generic number of regions.
+#'
+#' @param IO Description of the first parameter.
+#' @param measures Description of the second parameter.
+#' @param coefficienti.
+#' @param consumo.
+#' @param params.
+#' @param rounds.
+#' @param LD_hazus Labor reduction based on hazus restoration times already filled to cover the rounds.
+#' @param LD_Emilia_ins_M.
+#' @param LossRatio_Emilia_I.
+#' @param scenario.
+#' @param epsilon.
+#' @param vector_idx Whic are the indices of the regions flooded.
+#' @param n_reg_flooded How many regions are flooded
+#' @return Return a bunch of objects, that i don't fully understand.
+ 
 library(matrixStats)
 
 n=measures$n
@@ -104,9 +123,9 @@ sales_sectors=array(0,dim=c(nbRounds,43))
 capacity=array(0,dim=c(nbRounds,nItalianRegions*nSectors))
 capacitySectors=array(0,dim=c(nbRounds,43))
 capacityRegions=array(0,dim=c(nbRounds,20))
-capacity_EROM=array(0,dim=c(nbRounds,43))
+capacity_reg=array(0,dim=c(nbRounds,43*n_reg_flooded))
 capacity2=array(0,dim=c(nbRounds,nItalianRegions*nSectors))
-capacity_EROM2=array(0,dim=c(nbRounds,43))
+capacity_reg2=array(0,dim=c(nbRounds,43*n_reg_flooded))
 demandTotal=c(rep(0,nbRounds))
 demandSectors=array(0,dim=c(nbRounds,43))
 demandRegions=array(0,dim=c(nbRounds,20))
@@ -140,7 +159,7 @@ c_all_delivered=c(rep(0,nbRounds))
 laborAvailable1=matrix(100,nrow=1, ncol=n)
 #The leontief coefficient for labor is calculated on workers actually needed for production (i.e. 100)
 laborLeontiefCoefficients=(laborAvailable1)/production     #(production=rowSums(IO[1:n,]))
-laborLeontiefCoefficientsEmilia=laborLeontiefCoefficients[id_start_reg:id_end_reg]
+laborLeontiefCoefficientsreg=laborLeontiefCoefficients[vector_idx]
 
 #Same logic for the PRODUCTION SHOCKS, expressed as % deviation from initial labor available to each industry, normalized to 100 (plus 20 to keep excess capacity)
 productionShock=matrix(0, nrow=n, ncol=nbRounds)
@@ -153,10 +172,11 @@ inventoryShock=matrix(0, nrow=n, ncol=nbRounds)
 #stime da ultimo Report Emilia Romagna: https://protezionecivile.regione.emilia-romagna.it/notizie/2023/novembre/post-alluvione-in-arrivo-106-milioni-di-euro-per-sostenere-le-imprese-agricole-dell2019emilia-romagna
 #assmpt: the loss is equally distributed over 31 weeks (31=weighted average of downtime, see Beatrice's data)
 #LossAgri<-1500/52 #old loss and assumptions
-LossAgri<-912/31 
-OutputAgri_afterFlood<-production[302]-LossAgri
-laborAgri_afterFlood<-laborLeontiefCoefficientsEmilia[1]*OutputAgri_afterFlood  #weekly
-laborShock_Agri<-(laborAvailable1[1,1]-laborAgri_afterFlood)/100     #percentage variation in labor
+# WE FORGET ABOUT AGRICULTURE
+# LossAgri<-912/31 
+# OutputAgri_afterFlood<-production[302]-LossAgri
+# laborAgri_afterFlood<-laborLeontiefCoefficientsreg[1]*OutputAgri_afterFlood  #weekly
+# laborShock_Agri<-(laborAvailable1[1,1]-laborAgri_afterFlood)/100     #percentage variation in labor
 
 #shocks for all sectors:
 shocks<-matrix(0,nrow = nSectors, ncol = nbRounds+1)
@@ -164,48 +184,47 @@ shocks[,1]<-c(1:43)
 
 if(scenario==1){
   #HAZUS
-  # LD_Emilia<-LD_Emilia_hazus[,-1]
-  LD_Emilia<-LD_Emilia_hazus
-  # paste('Size LD Emilia:',dim(LD_Emilia)) %>% print()
-  shocks[,2:101]<-as.matrix(LD_Emilia[,2:101])
-  LD_Emilia<-as.data.frame(shocks)
-  LD_Emilia[1,2:32]<- laborShock_Agri 
-  Empl_inv<-LD_Emilia[,2]*100   #copy and paste as column into excel file "EROM_histoR_hazus" (folder HAZUS)
+  # LD_reg<-LD_reg_hazus[,-1]
+  # LD_reg<-LD_reg_hazus
+  # paste('Size LD reg:',dim(LD_reg)) %>% print()
+  # shocks[,2:101]<-as.matrix(LD_reg[,2:101])
+  # LD_reg<-as.data.frame(shocks)
+  # LD_reg[1,2:32]<- laborShock_Agri 
+  Empl_inv<-LD_hazus[,2]*100   #copy and paste as column into excel file "EROM_histoR_hazus" (folder HAZUS)
   LR<-as.data.frame(matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1))
 }
 
 if(scenario==2){
   #INSURANCE CLAIMS
-  LD_Emilia<-LD_Emilia_ins_M[,-1]
-  shocks[,2:101]<-as.matrix(LD_Emilia[,2:101])
-  LD_Emilia<-as.data.frame(shocks)
-  LD_Emilia[is.na(LD_Emilia)]<-0
-  LD_Emilia[1,2:32]<- laborShock_Agri
-  LD_Emilia[2,]<- 0  
-  LD_Emilia_hazus <- LD_Emilia_hazus[,-1]
-  LD_Emilia[3,] <- LD_Emilia_hazus[3,]
-  LD_Emilia[24:25,] <- LD_Emilia_hazus[24:25,]
-  LD_Emilia[39:42,] <- LD_Emilia_hazus[39:42,]
-  LD_Emilia[,102:nbRounds] <- 0
-  Empl_inv<-LD_Emilia[,2]*100   #copy and paste as column into excel file "EROM_histoR_ing" (folder CLAIMS)
+  LD_reg<-LD_reg_ins_M[,-1]
+  shocks[,2:101]<-as.matrix(LD_reg[,2:101])
+  LD_reg<-as.data.frame(shocks)
+  LD_reg[is.na(LD_reg)]<-0
+  LD_reg[1,2:32]<- laborShock_Agri
+  LD_reg[2,]<- 0  
+  LD_reg_hazus <- LD_reg_hazus[,-1]
+  LD_reg[3,] <- LD_reg_hazus[3,]
+  LD_reg[24:25,] <- LD_reg_hazus[24:25,]
+  LD_reg[39:42,] <- LD_reg_hazus[39:42,]
+  LD_reg[,102:nbRounds] <- 0
+  Empl_inv<-LD_reg[,2]*100   #copy and paste as column into excel file "EROM_histoR_ing" (folder CLAIMS)
   #shocks to inventories
-  LR_Emilia<-LossRatio_Emilia_I[,-1]
+  LR_reg<-LossRatio_reg_I[,-1]
   LR<-matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1)
-  # LR_Emilia<-LR_Emilia[,-1]
-  shocks_I<-matrix(0,nrow=nrow(LR_Emilia), ncol=ncol(LR_Emilia)+8)
-  shocks_I[,1:100]<-as.matrix(LR_Emilia)
-  LR[id_start_reg:id_end_reg,2:(nbRounds+1)]<-as.matrix(shocks_I)
+  # LR_reg<-LR_reg[,-1]
+  shocks_I<-matrix(0,nrow=nrow(LR_reg), ncol=ncol(LR_reg)+8)
+  shocks_I[,1:100]<-as.matrix(LR_reg)
+  LR[vector_idx,2:(nbRounds+1)]<-as.matrix(shocks_I)
   LR<-as.data.frame(LR)
 }
 
 #the following is to run after having decided which shock to use:
-LD<-matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1)
-# paste(nSectors*(nItalianRegions-1),nbRounds+1) %>% print()
-LD_Emilia<-LD_Emilia[,-1]
-#Here sets the shocks at the rows corresponding to the sectors of Emilia Romagna
-LD[id_start_reg:id_end_reg,2:(nbRounds+1)]<-as.matrix(LD_Emilia)
-LD<-as.data.frame(LD)
-
+# LD<-matrix(0,nrow=(nSectors*(nItalianRegions-1)), ncol=nbRounds+1)
+# # paste(nSectors*(nItalianRegions-1),nbRounds+1) %>% print()
+# LD_reg<-LD_reg[,-1]
+# #Here sets the shocks at the rows corresponding to the sectors of the region
+# LD[vector_idx,2:(nbRounds+1)]<-as.matrix(LD_reg)
+LD<-as.data.frame(LD_hazus)
 
 #labor shocks
 productionShock[1:((nItalianRegions-1)*nSectors),5]=-LD$V2
@@ -339,9 +358,9 @@ fd=matrix(finalDemandTot,nrow=n, ncol=1)
 productionDemand=matrix(0,nbRounds,n)
 pastDemand=matrix(0,n,max(nbRounds,max(parameters[,"Exp"])))
 bottlenecks=matrix(0,n,nbRounds)
-bottlenecks_EROM=matrix(0,nSectors,nbRounds)
+bottlenecks_reg=matrix(0,nSectors*n_reg_flooded,nbRounds)
 bottlenecks_inputs=matrix(0,n,nbRounds)
-bottlenecks_inputs_EROM=matrix(0,nSectors,nbRounds)
+bottlenecks_inputs_reg=matrix(0,nSectors*n_reg_flooded,nbRounds)
 check1=matrix(0,n,nbRounds)
 check2=matrix(0,n,nbRounds)
 check3=matrix(0,n,nbRounds)
@@ -454,7 +473,7 @@ for(t in 1:nbRounds){
   }
   maxOutputGivenLabour=laborAvailable/laborLeontiefCoefficients
   capacity[t,]=maxOutputGivenLabour
-  capacity_EROM[t,]=maxOutputGivenLabour[1,id_start_reg:id_end_reg]
+  capacity_reg[t,]=maxOutputGivenLabour[1,vector_idx]
   expectations_l=pmin(expectations,maxOutputGivenLabour)     #eq3
   
   vec_inventoryShock<-as.numeric(1-t(inventoryShock[,t]))
@@ -489,18 +508,18 @@ for(t in 1:nbRounds){
   #if productioin constrained by labor and demand>production feasible, then allow sectors not subject to labor input exogenous constraints 
   #(i.e. those having >= workers than at the beginning) to hire additional workers
   hiringSectors=which(((laborAvailable[1,]/laborLeontiefCoefficients[1,])<pmin(maxOutputGivenImports,colMins(weightedOutput)))&(laborAvailable[1,]>=laborAvailable1[1,])&(expectations>t(maxOutputFeasible)))
-  hiringSectors_EROM=which(((laborAvailable[1,id_start_reg:id_end_reg]/laborLeontiefCoefficients[1,id_start_reg:id_end_reg])<pmin(maxOutputGivenImports[id_start_reg:id_end_reg],colMins(weightedOutput[id_start_reg:id_end_reg,id_start_reg:id_end_reg])))&(laborAvailable[1,id_start_reg:id_end_reg]>=laborAvailable1[1,id_start_reg:id_end_reg])&(expectations[id_start_reg:id_end_reg]>t(maxOutputFeasible[id_start_reg:id_end_reg])))
+  hiringSectors_EROM=which(((laborAvailable[1,vector_idx]/laborLeontiefCoefficients[1,vector_idx])<pmin(maxOutputGivenImports[vector_idx],colMins(weightedOutput[vector_idx,vector_idx])))&(laborAvailable[1,vector_idx]>=laborAvailable1[1,vector_idx])&(expectations[vector_idx]>t(maxOutputFeasible[vector_idx])))
   Num_hiringSectors[t]<-length(hiringSectors)
   Num_hiringSectors_EROM[t]<-length(hiringSectors_EROM)
   laborAvailable[hiringSectors]=expectations[hiringSectors]*laborLeontiefCoefficients[hiringSectors]
   maxOutputGivenLabour=laborAvailable/laborLeontiefCoefficients
   capacity2[t,]=maxOutputGivenLabour
-  capacity_EROM2[t,]=maxOutputGivenLabour[1,id_start_reg:id_end_reg]
+  capacity_reg2[t,]=maxOutputGivenLabour[1,vector_idx]
   
   expectations_l=pmin(expectations,maxOutputGivenLabour)
   maxOutputFeasible=pmin(maxOutputGivenLabour,pmin(maxOutputGivenImports,colMins(weightedOutput)))
   bottlenecks[,t]=colMins(weightedOutput)
-  bottlenecks_EROM[,t]=colMins(weightedOutput[id_start_reg:id_end_reg,id_start_reg:id_end_reg])
+  bottlenecks_reg[,t]=colMins(weightedOutput[vector_idx,vector_idx])
   xxx<-round(colMins(maxOutputGivenIntermediateInputsLeontief),digits=2)
   yyy<-round(colMins(weightedOutput),digits=2)
   for (i in 1:(nSectors*nItalianRegions)) {
@@ -518,10 +537,10 @@ for(t in 1:nbRounds){
     }
   }
   
-  check1_EROM<-check1[id_start_reg:id_end_reg,]
-  check2_EROM<-check2[id_start_reg:id_end_reg,]
-  check3_EROM<-check3[id_start_reg:id_end_reg,]
-  check4_EROM<-check4[id_start_reg:id_end_reg,]
+  check1_EROM<-check1[vector_idx,]
+  check2_EROM<-check2[vector_idx,]
+  check3_EROM<-check3[vector_idx,]
+  check4_EROM<-check4[vector_idx,]
   
   #every sector computes the inputs required to satisfy its expected total demand given by observed current period final demand and past-period orders by opther sectors
   inputsRequiredGivenDemand=A * rep(expectations_l, rep.int(nrow(A),length(expectations_l)))
@@ -550,7 +569,7 @@ for(t in 1:nbRounds){
       check5[i,t]<-1   #actual demand is greater than expected demand (sectors might have produced less)
     }
   }
-  check5_EROM<-check5[id_start_reg:id_end_reg,]
+  check5_EROM<-check5[vector_idx,]
   pastfd=fd+Exp
   
   demandTotal[t]<-sum(demand+Exp)
@@ -590,15 +609,15 @@ for(t in 1:nbRounds){
     productionDelivered=maxOutputFeasible
   }
   bottlenecks[,t]=bottlenecks[,t]==productionDelivered
-  bottlenecks_EROM[,t]=bottlenecks_EROM[,t]==productionDelivered[,id_start_reg:id_end_reg]
+  bottlenecks_reg[,t]=bottlenecks_reg[,t]==productionDelivered[,vector_idx]
   for(i in 1:n){
     if(bottlenecks[i,t]==1 & check3[i,t]==1){
       bottlenecks_inputs[i,t]=1
     }
   }
   for(i in 1:nSectors){
-    if(bottlenecks_EROM[i,t]==1 & check3_EROM[i,t]==1){
-      bottlenecks_inputs_EROM[i,t]=1
+    if(bottlenecks_reg[i,t]==1 & check3_EROM[i,t]==1){
+      bottlenecks_inputs_reg[i,t]=1
     }
   }
   
@@ -885,9 +904,9 @@ lossProd_EROM2=((colSums(prod_sectors_EROM[4:108,])-105*prod_sectors_EROM[4,])/(
 
 #TO STUDY DIRECT/INDIRECT EFFECTS
 #Capacity (changing due to labor shocks)
-for(i in 1:ncol(capacity_EROM)){
-  capacity_EROM[,i]=capacity_EROM[,i]/capacity_EROM[1,i]*100
-  capacity_EROM2[,i]=capacity_EROM2[,i]/capacity_EROM2[1,i]*100
+for(i in 1:ncol(capacity_reg)){
+  capacity_reg[,i]=capacity_reg[,i]/capacity_reg[1,i]*100
+  capacity_reg2[,i]=capacity_reg2[,i]/capacity_reg2[1,i]*100
 }  #weekly capacity Emilia
 
 
