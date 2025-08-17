@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 85, in <module>
-    parser.add_argument('-tf','--type_flood', type=str, choiches=['River','Coastal','Compound'], help='Enable verbose mode')
-  File "/home/luigi.cesarini/.conda/envs/my_xclim_env/lib/python3.11/argparse.py", line 1450, in add_argument
-    action = action_class(**kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: _StoreAction.__init__() got an unexpected keyword argument 'choiches'
-srun: error: cn07: task 0: Exited with exit code 1

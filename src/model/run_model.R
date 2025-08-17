@@ -20,8 +20,8 @@ setwd(go_up_n_dirs(n = 3))
 
 source("src/model/model_final.R")
 
-TradLeontief=0  #0=modified Leontief 
-#TradLeontief=1  #1=traditional Leontief
+# TradLeontief=0  #0=modified Leontief 
+TradLeontief=1  #1=traditional Leontief
 
 #####################################################
 # START THE IMPORT OF ALL THE FILE NECESSARY TO RUN THE MODEL

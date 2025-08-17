@@ -54,7 +54,7 @@ if __name__ == "__main__":
     
     assert np.isin(regions,regioni).all(), "Some regions are missing"
 
-    # print(lf)
+    # print(regions)
 
     for reg in regions:
         df_event=pd.read_csv(f"test/tot_addetti_by_sector_intermediate_{id_event}_{year}_{reg}.csv")

@@ -50,7 +50,7 @@ if (DEBUG) {
 
 
 files <- list.files(glue('out/vector/{year}/'),glue("EVENT_{id_event}_{year}*"),full.names=TRUE)
-
+# print(files)
 regions <- lapply(files,function(g) g %>% stringr::str_split('_') %>% unlist() %>% .[4] ) %>% unlist()  
 
 for (reg in regions){

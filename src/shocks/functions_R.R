@@ -1,6 +1,7 @@
 suppressPackageStartupMessages(library(dplyr))
 
 library(sf) %>% suppressPackageStartupMessages()
+library(glue) %>% suppressPackageStartupMessages()
 library(readxl) %>% suppressPackageStartupMessages()
 library(stringr) %>% suppressPackageStartupMessages()
 library(jsonlite) %>% suppressPackageStartupMessages()
@@ -71,3 +72,44 @@ get_rt_hit  <- function(all_hit,tot_addetti_by_reg){
     return(df_agg_sect_hit)
 
 }
+
+
+
+get_num_claims <- function(weeks,nsect=43,xx,res_xx,type="S") {
+  col_var <- glue::glue("DT_{type}_ww") %>% as.character()
+  size_var <- glue::glue("sizeBI_{type}_ww") %>% as.character()
+  res_size_var <- glue::glue("res_sizeBI_{type}_ww") %>% as.character()
+  tot_var <- glue::glue("tot_sizeBI_{type}_ww") %>% as.character()
+
+  num <- data.frame(matrix(0, nrow=nsect, ncol=(1+(nrow(weeks)+1))))
+
+  colnames(num)<-c(
+      "irpet_n",
+      as.numeric(as.character(weeks$Var1)),
+      max(as.numeric(as.character(weeks$Var1)))+1
+      )
+
+  num[,1]<-c(1:nsect)
+
+  num <- reshape2::melt(num,id.vars="irpet_n",variable.name=col_var,factorsAsStrings=TRUE) 
+
+  num <- num %>% mutate(across(where(is.factor), ~ as.numeric(as.character(.x))))
+
+
+  bind_rows(xx,
+  res_xx %>% rename(size_var=res_size_var)) -> binded
+  #   summarise(glue("tot_sizeBI_{type}_ww") = sum(glue("sizeBI_{type}_ww")), .by = c('irpet_n',glue('DT_{type}_ww'))) -> tot_xx
+  #   group_by(irpet_n, !!sym(col_var)) %>%
+  #     summarise(!!sym(tot_var) := sum(!!sym(size_var)), .groups="drop") -> tot_xx 
+
+  # left_join(num,tot_xx, by=c('irpet_n',col_var)) %>% 
+  #     select(-value) %>% 
+  #     reshape2::dcast(irpet_n ~ get(col_var))) -> num
+
+  # num[is.na(num)] <- 0
+
+  return(c(num,binded))
+}
+
+
+

@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 126, in <module>
-    wd=[clipped.sel(x=lon,y=lat, method="nearest").values.item() for lat,lon in zip(all_ul.geometry.y,all_ul.geometry.x)]
-        ^^^^^^^
-NameError: name 'clipped' is not defined
-srun: error: cn07: task 0: Exited with exit code 1

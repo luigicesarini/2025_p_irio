@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/mnt/beegfs/lcesarini/2025_p_irio/src/./clip/clip_events_bilanci.py", line 96, in <module>
-    year=args.yr#2015
-         ^^^^^^^
-AttributeError: 'Namespace' object has no attribute 'yr'
-srun: error: cn07: task 0: Exited with exit code 1

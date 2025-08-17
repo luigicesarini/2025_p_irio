@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=120:00:00
 #SBATCH --mem-per-cpu=256GB
-#SBATCH --nodelist=cn03
+#SBATCH --nodelist=cn08
 #SBATCH --account=PR_climate
 
 echo "start of job"
@@ -16,7 +16,7 @@ echo "start of job"
 start_time=$(date +%s)
 
 
-DAY=10
+DAY=1
 echo "eliminating results slurm older than $DAY days"
 date +'%Y-%m-%d %H:%M:%S'
 
@@ -47,7 +47,7 @@ echo
 echo conda activate my_xclim_env
 echo ./shocks/create_input.py -id $id -yr $year
 echo 
-echo rm ../test/*intermediate*
+# echo rm ../test/*intermediate*
 echo ----------------------------------------------
 
 # echo "Processing CSV"
@@ -78,7 +78,7 @@ conda activate my_xclim_env
 ./shocks/create_input.py -id $id -yr $year
 # ./shocks/create_input.py -id 40863 -yr 2017
 
-rm ../test/*intermediate*
+# rm ../test/*intermediate*
 
 wait
 
