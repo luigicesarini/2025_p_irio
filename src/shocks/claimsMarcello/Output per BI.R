@@ -35,15 +35,15 @@ corr_sect <- jsonlite::fromJSON("res/correspondance_sector.json")
 path_evento="out/vector/2017/EVENT_40863_2017_Toscana_River_ul.gpkg"
 entire_region=sf::st_read("../2024_IRIO_EQ/res/Toscana_geocoded.gpkg")
 DTB=sf::st_read(path_evento)
-dim(DTB)
+
 left_join(
   DTB,
-  corr_sect %>% rename("Sectors"="name_ita") %>% select(Sectors,ING_sector),
+  corr_sect %>% rename("Sectors"="name_ita","irpet_n"="id") %>% select(Sectors,ING_sector,irpet_n),
   by="Sectors"
 )  %>% 
 filter(ING_sector!="na")-> DTB
 DTB=subset(DTB, !is.na(ING_sector))
-dim(DTB)
+colnames(DTB)
 
 ###CARICO MATRICI VULNERABILITà BI
 multiplesheets <- function(fname) { 
@@ -331,13 +331,13 @@ DTB$BI_I_yy <- DTB$GP_I*DTB$DT_I/360
 #   theme_minimal()
 
 #Esportare il Dataframe
-colnames(entire_region)
-colnames(DTB)
+# colnames(entire_region)
+# colnames(DTB)
 left_join(
   entire_region %>% st_set_geometry(NULL),
-  DTB %>% select(row_id,WD,LR_S:BI_I_yy) %>% st_set_geometry(NULL),
+  DTB %>% select(row_id,WD,irpet_n,LR_S:BI_I_yy) %>% st_set_geometry(NULL),
   by='row_id') %>% 
-saveRDS(., file = glue::glue('./out/shocks/claims/marcello/{stringr::str_replace(basename(path_evento),".gpkg",".rds")}'))
+  saveRDS(., file = glue::glue('./out/shocks/claims/marcello/{stringr::str_replace(basename(path_evento),".gpkg",".rds")}'))
 
 
 # #altro testo

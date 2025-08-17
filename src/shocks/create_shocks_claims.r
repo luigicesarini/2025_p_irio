@@ -9,6 +9,7 @@ source("src/shocks/functions_R.R")
 path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
 SUFFIX_FILENAME <- stringr::str_replace(basename(path_evento),"_ul.rds","")
 DTB <- readRDS(path_evento)
+
 # the weakly data on BI are wrong
 
 # Event
@@ -18,7 +19,6 @@ DTB[is.na(DTB)]<-0
 
 
 # downtime in weeks
-all_hit$DT_S[1:10] %% 7
 all_hit$DT_S_ww <- all_hit$DT_S %/% 7
 all_hit$resDT_S_ww <- (all_hit$DT_S %% 7 ) %>% round()
 # (all_hit$DT_S %% 7 )  %>% head()
@@ -113,7 +113,6 @@ num_S <- reshape2::melt(num_S,id.vars="irpet_n",variable.name="DT_S_ww",factorsA
 
 num_S$DT_S_ww <- num_S$DT_S_ww %>% as.character() %>% as.numeric()
 
-
 bind_rows(xx_S,res_xx_S %>% rename("sizeBI_S_ww"="res_sizeBI_S_ww")) %>% 
     summarise(tot_sizeBI_S_ww = sum(sizeBI_S_ww), .by = c('irpet_n','DT_S_ww')) -> tot_xx_S
 
@@ -195,7 +194,7 @@ num_I[is.na(num_I)] <- 0
 # saveRDS(num_S,"/mnt/beegfs/lcesarini/2025_p_irio/test/num_S_luigi.rds")
 
 # find all the ul by sector in the region and join
-
+#qua sta l'inghippo!! chiedere a JLE di fare questa cosa
 empl_totSect <- DTB %>% summarise(tot_addetti=sum(addetti_ul),.by=irpet_n)
 
 denom <- left_join(data.frame(irpet_n=1:43),empl_totSect,by='irpet_n')  %>% mutate(tot_addetti=tidyr::replace_na(tot_addetti,0))
@@ -284,7 +283,7 @@ for (i in col_NA) {
     }
 }
 
-add zeros to the weeks after the last week of addetti
+# add zeros to the weeks after the last week of addetti
 output_shock_I[is.na(output_shock_I)]<-0
 output_shock_I[,(max(col_data)+1):dim(output_shock_I)[2]]<-0
 
@@ -364,7 +363,7 @@ LR_shock_EROMgeoloc_M[,2]<-as.matrix(joined_M$AvLossRatio/joined_M$tot_addetti)
 LR_shock_EROMgeoloc_M[is.na(LR_shock_EROMgeoloc_M)]<-0  
 
 ## save loss ratio (LR) shock
-write.csv(LR_shock_EROMgeoloc_M,file='out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_M_met2.csv')
+write.csv(LR_shock_EROMgeoloc_M,file=glue('out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_M_met2.csv'))
 
 ## For the week of the shock event, calculate the weighted average of LR by sector (weights = n.employees)
 
@@ -391,5 +390,5 @@ LR_shock_EROMgeoloc_I[,2]<-as.matrix(joined_I$AvLossRatio/joined_I$tot_addetti)
 LR_shock_EROMgeoloc_I[is.na(LR_shock_EROMgeoloc_I)]<-0  
 
 ## save loss ratio (LR) shock
-write.csv(LR_shock_EROMgeoloc_I,file='out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_I_met2.csv')
+write.csv(LR_shock_EROMgeoloc_I,file=glue::glue('out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_I_met2.csv'))
 
