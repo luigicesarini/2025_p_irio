@@ -14,7 +14,6 @@ library(zoo)
 library(readxl) 
 library(ggplot2)
 library(tidyverse)
-library(furniture)
 library(tidyverse)
 
 "%!in%" <- Negate("%in%")
@@ -37,13 +36,19 @@ entire_region=sf::st_read("../2024_IRIO_EQ/res/Toscana_geocoded.gpkg")
 DTB=sf::st_read(path_evento)
 
 left_join(
+  entire_region,
+  corr_sect %>% rename("Sectors"="name_in_asia","irpet_n"="id") %>% select(Sectors,ING_sector,irpet_n),
+  by="Sectors"
+)  -> entire_region
+
+left_join(
   DTB,
-  corr_sect %>% rename("Sectors"="name_ita","irpet_n"="id") %>% select(Sectors,ING_sector,irpet_n),
+  corr_sect %>% rename("Sectors"="name_in_asia","irpet_n"="id") %>% select(Sectors,ING_sector,irpet_n),
   by="Sectors"
 )  %>% 
 filter(ING_sector!="na")-> DTB
 DTB=subset(DTB, !is.na(ING_sector))
-colnames(DTB)
+dim(DTB)
 
 ###CARICO MATRICI VULNERABILITà BI
 multiplesheets <- function(fname) { 
@@ -335,7 +340,7 @@ DTB$BI_I_yy <- DTB$GP_I*DTB$DT_I/360
 # colnames(DTB)
 left_join(
   entire_region %>% st_set_geometry(NULL),
-  DTB %>% select(row_id,WD,irpet_n,LR_S:BI_I_yy) %>% st_set_geometry(NULL),
+  DTB %>% select(row_id,WD,LR_S:BI_I_yy) %>% st_set_geometry(NULL),
   by='row_id') %>% 
   saveRDS(., file = glue::glue('./out/shocks/claims/marcello/{stringr::str_replace(basename(path_evento),".gpkg",".rds")}'))
 
@@ -357,7 +362,6 @@ left_join(
 #   # Se l'altezza non è presente nel dataframe, esegui l'interpolazione per l'asset specifico utilizzando na.approx
 #   valore_LR <- na.approx(LR$Building[[asset_da_cercare]], x = LR$Building$WaterDepth, xout = altezza_causale)
 # }
-
 
 
 

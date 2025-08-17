@@ -9,7 +9,6 @@ source("src/shocks/functions_R.R")
 path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
 SUFFIX_FILENAME <- stringr::str_replace(basename(path_evento),"_ul.rds","")
 DTB <- readRDS(path_evento)
-
 # the weakly data on BI are wrong
 
 # Event
@@ -212,7 +211,6 @@ output_shock_S <- data.frame(matrix(NA, nrow=43, ncol=101))
 colnames(output_shock_S) <- c("irpet_n",1:100)
 
 output_shock_S[,match(colnames(perc_BI),colnames(output_shock_S))] <- perc_BI
-
 
 col_data <- which(colnames(output_shock_S) %in% colnames(perc_BI))[-1]
 col_NA <- which(colnames(output_shock_S) %!in% colnames(perc_BI))
