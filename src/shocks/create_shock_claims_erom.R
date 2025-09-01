@@ -204,7 +204,7 @@ denom <- left_join(data.frame(irpet_n=1:43),empl_totSect,by='irpet_n')  %>% muta
 #make BI in percentage for S
 perc_BI <- num_S
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_S[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_S)[2]] <- rev(cumsum(as.vector(num_S[i,dim(num_S)[2]:2]))) / denom[i,2]
 }
 
 output_shock_S <- data.frame(matrix(NA, nrow=43, ncol=101))

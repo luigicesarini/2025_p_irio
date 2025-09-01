@@ -6,8 +6,8 @@ setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
 source("src/shocks/functions_R.R")
 
-# path_evento <- "out/shocks/claims/marcello/EVENT_408_2017_Toscana_River_ul.rds"
-path_evento <- "out/shocks/claims/marcello/EVENT_40829_2014_Piemonte_River_ul.rds"
+path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
+# path_evento <- "out/shocks/claims/marcello/EVENT_40829_2014_Piemonte_River_ul.rds"
 SUFFIX_FILENAME <- stringr::str_replace(basename(path_evento),"_ul.rds","")
 DTB <- readRDS(path_evento)
 # the weakly data on BI are wrong
@@ -206,7 +206,7 @@ denom <- left_join(data.frame(irpet_n=1:43),empl_totSect,by='irpet_n')  %>% muta
 #make BI in percentage for S
 perc_BI <- num_S
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_S[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_S)[2]] <- rev(cumsum(as.vector(num_S[i,dim(num_S)[2]:2]))) / denom[i,2]
 }
 
 output_shock_S <- data.frame(matrix(NA, nrow=43, ncol=101))
@@ -233,7 +233,7 @@ output_shock_S[,(max(col_data)+1):dim(output_shock_S)[2]]<-0
 #make BI in percentage for M
 perc_BI <- num_M
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_M[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_M)[2]] <- rev(cumsum(as.vector(num_M[i,dim(num_M)[2]:2]))) / denom[i,2]
 }
 
 output_shock_M <- data.frame(matrix(NA, nrow=43, ncol=101))
@@ -262,7 +262,7 @@ output_shock_M[,(max(col_data)+1):dim(output_shock_M)[2]]<-0
 #make BI in percentage for I
 perc_BI <- num_I
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_I[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_I)[2]] <- rev(cumsum(as.vector(num_I[i,dim(num_I)[2]:2]))) / denom[i,2]
 }
 
 output_shock_I <- data.frame(matrix(NA, nrow=43, ncol=101))
