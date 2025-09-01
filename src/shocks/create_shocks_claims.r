@@ -6,8 +6,9 @@ setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
 source("src/shocks/functions_R.R")
 
-path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
+# path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
 # path_evento <- "out/shocks/claims/marcello/EVENT_40829_2014_Piemonte_River_ul.rds"
+path_evento <- "out/shocks/claims/marcello/EVENT_40840_2015_Campania_River_ul.rds"
 SUFFIX_FILENAME <- stringr::str_replace(basename(path_evento),"_ul.rds","")
 DTB <- readRDS(path_evento)
 # the weakly data on BI are wrong

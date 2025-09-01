@@ -33,8 +33,10 @@ corr_sect <- jsonlite::fromJSON("res/correspondance_sector.json")
 
 # path_evento="out/vector/2017/EVENT_40863_2017_Toscana_River_ul.gpkg"
 # entire_region=sf::st_read("../2024_IRIO_EQ/res/Toscana_geocoded.gpkg")
-path_evento="out/vector/2014/EVENT_40829_2014_Piemonte_River_ul.gpkg"
-entire_region=sf::st_read("../2024_IRIO_EQ/res/Piemonte_geocoded.gpkg")
+# path_evento="out/vector/2014/EVENT_40829_2014_Piemonte_River_ul.gpkg"
+# entire_region=sf::st_read("../2024_IRIO_EQ/res/Piemonte_geocoded.gpkg")
+path_evento="out/vector/2015/EVENT_40840_2015_Campania_River_ul.gpkg"
+entire_region=sf::st_read("../2024_IRIO_EQ/res/Campania_geocoded.gpkg")
 DTB=sf::st_read(path_evento)
 
 left_join(
