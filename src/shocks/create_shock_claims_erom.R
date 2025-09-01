@@ -204,7 +204,7 @@ denom <- left_join(data.frame(irpet_n=1:43),empl_totSect,by='irpet_n')  %>% muta
 #make BI in percentage for S
 perc_BI <- num_S
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_S[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_S)[2]] <- rev(cumsum(as.vector(num_S[i,dim(num_S)[2]:2]))) / denom[i,2]
 }
 
 output_shock_S <- data.frame(matrix(NA, nrow=43, ncol=101))
@@ -232,7 +232,7 @@ output_shock_S[,(max(col_data)+1):dim(output_shock_S)[2]]<-0
 #make BI in percentage for M
 perc_BI <- num_M
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_M[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_M)[2]] <- rev(cumsum(as.vector(num_M[i,dim(num_M)[2]:2]))) / denom[i,2]
 }
 
 output_shock_M <- data.frame(matrix(NA, nrow=43, ncol=101))
@@ -261,7 +261,7 @@ output_shock_M[,(max(col_data)+1):dim(output_shock_M)[2]]<-0
 #make BI in percentage for I
 perc_BI <- num_I
 for (i in 1:nsect) {
-   perc_BI[i,2:24] <- rev(cumsum(as.vector(num_I[i,24:2]))) / denom[i,2]
+   perc_BI[i,2:dim(num_I)[2]] <- rev(cumsum(as.vector(num_I[i,dim(num_I)[2]:2]))) / denom[i,2]
 }
 
 output_shock_I <- data.frame(matrix(NA, nrow=43, ncol=101))
@@ -282,7 +282,7 @@ for (i in col_NA) {
     }
 }
 
-add zeros to the weeks after the last week of addetti
+# add zeros to the weeks after the last week of addetti
 output_shock_I[is.na(output_shock_I)]<-0
 output_shock_I[,(max(col_data)+1):dim(output_shock_I)[2]]<-0
 

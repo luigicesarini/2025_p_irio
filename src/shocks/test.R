@@ -124,3 +124,30 @@ axis(1, at = seq(1, 23, by = 1),labels=colnames(num_S)[2:24])
 
 
 DTB %>% filter(wh_m >0) %>% head() %>% View
+
+
+library(sf)
+sf_obj <- st_read("/mnt/beegfs/lcesarini/2024_IRIO_EQ/res/db_asia_geocoded.gpkg")
+
+
+dim(sf_obj)
+colnames(sf_obj)
+
+sum(is.na(sf_obj$Sectors))
+
+unique(sf_obj$Sectors)
+
+
+
+corr_sect <- jsonlite::fromJSON("/mnt/beegfs/lcesarini/2025_p_irio/res/correspondance_sector.json")
+df_corr <- corr_sect %>% dplyr::rename(Sectors=name_in_asia) %>% dplyr::select(Sectors,id)
+
+"%!in%" <- Negate("%in%")
+
+which(sf_obj$Sectors %!in% df_corr$Sectors)
+all(sf_obj$Sectors %in% df_corr$Sectors)
+
+sf_obj$Sectors[2366255]
+
+
+
