@@ -1,21 +1,32 @@
-suppressPackageStartupMessages(library(dplyr))
-suppressPackageStartupMessages(library(ggplot2))
+suppressWarnings(suppressPackageStartupMessages(library(dplyr)))
+suppressWarnings(suppressPackageStartupMessages(library(ggplot2)))
+suppressWarnings(suppressPackageStartupMessages(library(argparse)))
 
 "%!in%" <- Negate("%in%")
 setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 
 source("src/shocks/functions_R.R")
 
-# path_evento <- "out/shocks/claims/marcello/EVENT_40863_2017_Toscana_River_ul.rds"
-# path_evento <- "out/shocks/claims/marcello/EVENT_40829_2014_Piemonte_River_ul.rds"
-path_evento <- "out/shocks/claims/marcello/EVENT_40840_2015_Campania_River_ul.rds"
+# Create parser
+parser <- ArgumentParser(description = "My R script with arguments")
+
+# Add arguments
+parser$add_argument("-p", "--path_to_event", help="Path to input file of the flooded event", required=TRUE)
+# Parse arguments
+args <- parser$parse_args()
+
+
+path_evento=args$path_to_event
+year=str_split(basename(path_evento),"_")[[1]][3]
+regione=str_split(basename(path_evento),"_")[[1]][4]
+
 SUFFIX_FILENAME <- stringr::str_replace(basename(path_evento),"_ul.rds","")
 DTB <- readRDS(path_evento)
 # the weakly data on BI are wrong
 
 # Event
 all_hit<-subset(DTB,DTB$WD>0)
-print(dim(all_hit))
+# print(dim(all_hit))
 all_hit[is.na(all_hit)]<-0
 DTB[is.na(DTB)]<-0
 
@@ -120,7 +131,9 @@ bind_rows(xx_S,res_xx_S %>% rename("sizeBI_S_ww"="res_sizeBI_S_ww")) %>%
 
 left_join(num_S,tot_xx_S, by=c('irpet_n','DT_S_ww')) %>% 
     select(-value) %>% 
-    reshape2::dcast(irpet_n ~ DT_S_ww) -> num_S
+    reshape2::dcast(irpet_n ~ DT_S_ww,
+    value.var='tot_sizeBI_S_ww'
+    ) -> num_S
 
 num_S[is.na(num_S)] <- 0
 
@@ -153,7 +166,7 @@ bind_rows(xx_M,res_xx_M %>% rename("sizeBI_M_ww"="res_sizeBI_M_ww")) %>%
 
 left_join(num_M,tot_xx_M, by=c('irpet_n','DT_M_ww')) %>% 
     select(-value) %>% 
-    reshape2::dcast(irpet_n ~ DT_M_ww) -> num_M
+    reshape2::dcast(irpet_n ~ DT_M_ww, value.var='tot_sizeBI_M_ww') -> num_M
 
 num_M[is.na(num_M)] <- 0
 
@@ -186,7 +199,7 @@ bind_rows(xx_I,res_xx_I %>% rename("sizeBI_I_ww"="res_sizeBI_I_ww")) %>%
 
 left_join(num_I,tot_xx_I, by=c('irpet_n','DT_I_ww')) %>% 
     select(-value) %>% 
-    reshape2::dcast(irpet_n ~ DT_I_ww) -> num_I
+    reshape2::dcast(irpet_n ~ DT_I_ww,value.var='tot_sizeBI_I_ww') -> num_I
 
 num_I[is.na(num_I)] <- 0
 
@@ -288,9 +301,9 @@ for (i in col_NA) {
 output_shock_I[is.na(output_shock_I)]<-0
 output_shock_I[,(max(col_data)+1):dim(output_shock_I)[2]]<-0
 
-write.csv(output_shock_S,file=glue('out/shocks/claims/output_shocks_{SUFFIX_FILENAME}_S.csv'),row.names=FALSE)
-write.csv(output_shock_M,file=glue('out/shocks/claims/output_shocks_{SUFFIX_FILENAME}_M.csv'),row.names=FALSE)
-write.csv(output_shock_I,file=glue('out/shocks/claims/output_shocks_{SUFFIX_FILENAME}_I.csv'),row.names=FALSE)
+write.csv(output_shock_S,file=glue('out/shocks/claims/{year}/S/output_shocks_{SUFFIX_FILENAME}_S.csv'),row.names=FALSE)
+write.csv(output_shock_M,file=glue('out/shocks/claims/{year}/M/output_shocks_{SUFFIX_FILENAME}_M.csv'),row.names=FALSE)
+write.csv(output_shock_I,file=glue('out/shocks/claims/{year}/I/output_shocks_{SUFFIX_FILENAME}_I.csv'),row.names=FALSE)
 
 
 ################################################################################################
@@ -342,7 +355,7 @@ LR_shock_EROMgeoloc_S[,2]<-as.matrix(joined_S$AvLossRatio/joined_S$tot_addetti)
 LR_shock_EROMgeoloc_S[is.na(LR_shock_EROMgeoloc_S)]<-0  
 
 ## save loss ratio (LR) shock
-write.csv(LR_shock_EROMgeoloc_S,file=glue('out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_S_met2.csv'))
+write.csv(LR_shock_EROMgeoloc_S,file=glue('out/shocks/claims/{year}/S/LR_shocks_{SUFFIX_FILENAME}_S_met2.csv'))
 
 # For M
 ## For the week of the shock event, calculate the weighted average of LR by sector (weights = n.employees)
@@ -364,7 +377,7 @@ LR_shock_EROMgeoloc_M[,2]<-as.matrix(joined_M$AvLossRatio/joined_M$tot_addetti)
 LR_shock_EROMgeoloc_M[is.na(LR_shock_EROMgeoloc_M)]<-0  
 
 ## save loss ratio (LR) shock
-write.csv(LR_shock_EROMgeoloc_M,file=glue('out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_M_met2.csv'))
+write.csv(LR_shock_EROMgeoloc_M,file=glue('out/shocks/claims/{year}/M/LR_shocks_{SUFFIX_FILENAME}_M_met2.csv'))
 
 ## For the week of the shock event, calculate the weighted average of LR by sector (weights = n.employees)
 
@@ -391,5 +404,5 @@ LR_shock_EROMgeoloc_I[,2]<-as.matrix(joined_I$AvLossRatio/joined_I$tot_addetti)
 LR_shock_EROMgeoloc_I[is.na(LR_shock_EROMgeoloc_I)]<-0  
 
 ## save loss ratio (LR) shock
-write.csv(LR_shock_EROMgeoloc_I,file=glue::glue('out/shocks/claims/LR_shocks_{SUFFIX_FILENAME}_I_met2.csv'))
+write.csv(LR_shock_EROMgeoloc_I,file=glue::glue('out/shocks/claims/{year}/I/LR_shocks_{SUFFIX_FILENAME}_I_met2.csv'))
 

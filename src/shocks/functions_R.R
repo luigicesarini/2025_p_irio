@@ -1,10 +1,10 @@
 suppressPackageStartupMessages(library(dplyr))
 
-library(sf) %>% suppressPackageStartupMessages()
-library(glue) %>% suppressPackageStartupMessages()
-library(readxl) %>% suppressPackageStartupMessages()
-library(stringr) %>% suppressPackageStartupMessages()
-library(jsonlite) %>% suppressPackageStartupMessages()
+library(sf) %>% suppressPackageStartupMessages() %>% suppressWarnings()
+library(glue) %>% suppressPackageStartupMessages() %>% suppressWarnings()
+library(readxl) %>% suppressPackageStartupMessages() %>% suppressWarnings()
+library(stringr) %>% suppressPackageStartupMessages() %>% suppressWarnings()
+library(jsonlite) %>% suppressPackageStartupMessages() %>% suppressWarnings()
 
 setwd("/mnt/beegfs/lcesarini/2025_p_irio")
 

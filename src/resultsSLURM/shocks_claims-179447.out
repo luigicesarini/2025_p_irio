@@ -1,0 +1,1021 @@
+start of job
+eliminating results slurm older than 1 days
+2025-09-07 16:01:11
+/mnt/beegfs/lcesarini/2025_p_irio/src
+/mnt/beegfs/lcesarini/2025_p_irio/src
+no change     /apps/miniconda3/condabin/conda
+no change     /apps/miniconda3/bin/conda
+no change     /apps/miniconda3/bin/conda-env
+no change     /apps/miniconda3/bin/activate
+no change     /apps/miniconda3/bin/deactivate
+no change     /apps/miniconda3/etc/profile.d/conda.sh
+no change     /apps/miniconda3/etc/fish/conf.d/conda.fish
+no change     /apps/miniconda3/shell/condabin/Conda.psm1
+no change     /apps/miniconda3/shell/condabin/conda-hook.ps1
+no change     /apps/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /apps/miniconda3/etc/profile.d/conda.csh
+no change     /home/luigi.cesarini/.bashrc
+No action taken.
+
+----------------------------------------------
+Calling
+conda activate r_symi
+Rscript shocks/create_input.R
+
+conda activate my_xclim_env
+./shocks/create_input.py -id -yr
+
+----------------------------------------------
+--------------------
+
+--------------------
+Processing
+
+1952
+Processing
+
+1950
+--------------------
+--------------------
+
+
+--------------------
+Processing
+1951
+
+--------------------
+--------------------
+--------------------
+
+
+Processing
+1955
+Processing
+
+1954
+--------------------
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+--------------------
+--------------------
+
+Processing
+
+
+
+
+
+--------------------
+
+
+--------------------
+Processing
+--------------------
+--------------------
+--------------------
+
+1973
+Processing
+Processing
+Processing
+Processing
+Processing
+
+Processing
+Processing
+
+1962
+
+Processing
+
+
+Processing
+
+1953
+1957
+1959
+1958
+1967
+Processing
+--------------------
+1969
+--------------------
+1956
+Processing
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+1961
+Processing
+Processing
+1963
+
+--------------------
+
+--------------------
+
+--------------------
+
+--------------------
+
+
+1971
+
+
+
+Processing
+1970
+
+--------------------
+
+1968
+
+--------------------
+
+Processing
+
+Processing
+
+Processing
+
+Processing
+
+Processing
+Processing
+1976
+
+Processing
+1964
+
+--------------------
+
+
+
+
+
+
+
+1966
+1978
+--------------------
+--------------------
+--------------------
+
+Processing
+--------------------
+--------------------
+--------------------
+1975
+1960
+1979
+1984
+1965
+
+Processing
+Processing
+Processing
+Processing
+Processing
+Processing
+--------------------
+
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1955/EVENT_40073_1955_Valle d'Aosta_River_ul.gpkg
+--------------------
+1974
+
+
+
+
+
+--------------------
+1981
+1982
+1983
+1972
+1977
+1980
+--------------------
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1955/BI/EVENT_40073_1955_Valle d'Aosta_River_ul.rds
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+
+
+
+
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1959/EVENT_40124_1959_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1959/BI/EVENT_40124_1959_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1962/EVENT_40165_1962_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1962/BI/EVENT_40165_1962_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1961/EVENT_40153_1961_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1961/BI/EVENT_40153_1961_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1959/EVENT_40128_1959_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1959/BI/EVENT_40128_1959_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1957/EVENT_40101_1957_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1957/BI/EVENT_40101_1957_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1970/EVENT_40271_1970_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1970/BI/EVENT_40271_1970_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1982/EVENT_40423_1982_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1982/BI/EVENT_40423_1982_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1973/EVENT_40309_1973_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1973/BI/EVENT_40309_1973_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1956/EVENT_40088_1956_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1956/BI/EVENT_40088_1956_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1958/EVENT_40109_1958_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1958/BI/EVENT_40109_1958_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1953/EVENT_40046_1953_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1953/BI/EVENT_40046_1953_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1967/EVENT_40229_1967_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1973/EVENT_40310_1973_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1967/BI/EVENT_40229_1967_Valle d'Aosta_River_ul.rds
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1973/BI/EVENT_40310_1973_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1951/EVENT_40020_1951_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1951/BI/EVENT_40020_1951_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1968/EVENT_40242_1968_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1968/BI/EVENT_40242_1968_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1954/EVENT_40063_1954_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1954/BI/EVENT_40063_1954_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1977/EVENT_40363_1977_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1953/EVENT_40047_1953_Valle d'Aosta_River_ul.gpkg
+
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1977/BI/EVENT_40363_1977_Valle d'Aosta_River_ul.rds
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1953/BI/EVENT_40047_1953_Valle d'Aosta_River_ul.rds
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1981/EVENT_40411_1981_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1981/BI/EVENT_40411_1981_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1983/EVENT_40433_1983_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1983/BI/EVENT_40433_1983_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1975/EVENT_40330_1975_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1975/BI/EVENT_40330_1975_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1965/EVENT_40200_1965_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1965/BI/EVENT_40200_1965_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1966/EVENT_40217_1966_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1966/BI/EVENT_40217_1966_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1977/EVENT_40364_1977_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1977/BI/EVENT_40364_1977_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1980/EVENT_40400_1980_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1980/BI/EVENT_40400_1980_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1974/EVENT_40319_1974_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1974/BI/EVENT_40319_1974_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1960/EVENT_40141_1960_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1960/BI/EVENT_40141_1960_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1984/EVENT_40448_1984_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1984/BI/EVENT_40448_1984_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1953/EVENT_40052_1953_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1953/BI/EVENT_40052_1953_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1963/EVENT_40174_1963_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1963/BI/EVENT_40174_1963_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1969/EVENT_40259_1969_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1969/BI/EVENT_40259_1969_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1960/EVENT_40143_1960_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1960/BI/EVENT_40143_1960_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+
+Done
+
+--------------------
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1965/EVENT_40202_1965_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1965/BI/EVENT_40202_1965_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1972/EVENT_40294_1972_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1972/BI/EVENT_40294_1972_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1960/EVENT_40147_1960_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1968/EVENT_40250_1968_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1960/BI/EVENT_40147_1960_Valle d'Aosta_River_ul.rds
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1968/BI/EVENT_40250_1968_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1978/EVENT_40376_1978_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1977/EVENT_40367_1977_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1978/BI/EVENT_40376_1978_Valle d'Aosta_River_ul.rds
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1977/BI/EVENT_40367_1977_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1965/EVENT_40204_1965_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1965/BI/EVENT_40204_1965_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+--------------------
+
+Processing
+1985
+--------------------
+
+--------------------
+
+Processing
+
+--------------------
+1986
+Processing
+
+1987
+--------------------
+
+--------------------
+--------------------
+
+Processing
+1991
+--------------------
+--------------------
+
+
+
+--------------------
+--------------------
+Processing
+Processing
+
+1988
+1990
+Processing
+
+
+1989
+--------------------
+--------------------
+
+--------------------
+--------------------
+
+Processing
+1992
+
+--------------------
+--------------------
+--------------------
+--------------------
+
+
+
+Processing
+Processing
+Processing
+1998
+1995
+1994
+
+
+
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+--------------------
+--------------------
+--------------------
+
+
+Processing
+2017
+
+
+Processing
+Processing
+
+Done
+Processing
+2020
+1999
+2015
+--------------------
+
+
+
+--------------------
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+
+Processing
+
+Processing
+--------------------
+--------------------
+--------------------
+Processing
+1996
+1997
+
+
+--------------------
+--------------------
+
+
+2016
+
+
+Processing
+Processing
+
+--------------------
+
+--------------------
+--------------------
+Processing
+--------------------
+--------------------
+--------------------
+Processing
+2013
+
+--------------------
+--------------------
+--------------------
+
+--------------------
+1993
+2001
+Processing
+
+--------------------
+
+
+Processing
+2009
+2002
+
+
+
+
+
+Processing
+
+
+2011
+Processing
+
+Done
+
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
+Processing
+--------------------
+
+--------------------
+Processing
+Processing
+Processing
+--------------------
+2005
+--------------------
+--------------------
+
+--------------------
+2000
+Processing
+
+
+
+
+
+2019
+
+Processing
+2006
+2008
+
+2003
+2007
+
+
+2014
+--------------------
+--------------------
+Processing
+Processing
+Processing
+--------------------
+
+--------------------
+--------------------
+
+
+--------------------
+--------------------
+--------------------
+
+
+Done
+2004
+
+2018
+2012
+--------------------
+--------------------
+
+--------------------
+
+
+--------------------
+--------------------
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1990/EVENT_40518_1990_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1990/BI/EVENT_40518_1990_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1988/EVENT_40496_1988_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1988/BI/EVENT_40496_1988_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2020/EVENT_40898_2020_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2020/BI/EVENT_40898_2020_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1999/EVENT_40620_1999_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1999/BI/EVENT_40620_1999_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1987/EVENT_40485_1987_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1987/BI/EVENT_40485_1987_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1999/EVENT_40621_1999_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1999/BI/EVENT_40621_1999_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1993/EVENT_40552_1993_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1993/BI/EVENT_40552_1993_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1995/EVENT_40575_1995_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1995/BI/EVENT_40575_1995_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2006/EVENT_40710_2006_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2006/BI/EVENT_40710_2006_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2001/EVENT_40645_2001_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2001/BI/EVENT_40645_2001_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1994/EVENT_40563_1994_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1994/BI/EVENT_40563_1994_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2002/EVENT_40657_2002_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2002/BI/EVENT_40657_2002_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1985/EVENT_40461_1985_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1985/BI/EVENT_40461_1985_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2019/EVENT_40886_2019_Friuli-Venezia Giulia_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2019/BI/EVENT_40886_2019_Friuli-Venezia Giulia_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1987/EVENT_40486_1987_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1987/BI/EVENT_40486_1987_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2018/EVENT_40871_2018_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1991/EVENT_40528_1991_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2018/BI/EVENT_40871_2018_Valle d'Aosta_River_ul.rds
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1991/BI/EVENT_40528_1991_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1985/EVENT_40462_1985_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1985/BI/EVENT_40462_1985_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1999/EVENT_40625_1999_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1999/BI/EVENT_40625_1999_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2009/EVENT_40746_2009_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2009/BI/EVENT_40746_2009_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2004/EVENT_40684_2004_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2004/BI/EVENT_40684_2004_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1986/EVENT_40468_1986_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1986/BI/EVENT_40468_1986_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2019/EVENT_40887_2019_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2019/BI/EVENT_40887_2019_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2018/EVENT_40872_2018_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2018/BI/EVENT_40872_2018_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1993/EVENT_40556_1993_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1993/BI/EVENT_40556_1993_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2006/EVENT_40715_2006_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2006/BI/EVENT_40715_2006_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1987/EVENT_40488_1987_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1987/BI/EVENT_40488_1987_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/1994/EVENT_40567_1994_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/1994/BI/EVENT_40567_1994_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2016/EVENT_40849_2016_Valle d'Aosta_River_ul.gpkg
+
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2016/BI/EVENT_40849_2016_Valle d'Aosta_River_ul.rds
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2000/EVENT_40639_2000_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2000/BI/EVENT_40639_2000_Valle d'Aosta_River_ul.rds
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2013/EVENT_40806_2013_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2013/BI/EVENT_40806_2013_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2014/EVENT_40822_2014_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2014/BI/EVENT_40822_2014_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2020/EVENT_40903_2020_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2020/BI/EVENT_40903_2020_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+Rscript shocks/claimsMarcello/Output_per_BI.R -p /mnt/beegfs/lcesarini/2025_p_irio/out/vector/2018/EVENT_40880_2018_Valle d'Aosta_River_ul.gpkg
+Rscript shocks/create_shocks_claims.r -p /mnt/beegfs/lcesarini/2025_p_irio/out/shocks/claims/2018/BI/EVENT_40880_2018_Valle d'Aosta_River_ul.rds
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+
+--------------------
+
+Done
+--------------------
+
+
+--------------------
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+
+--------------------
+
+Done
+
+--------------------
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+--------------------
+
+Done
+
+--------------------
+
+The job was done in 4 seconds
+
+Sun Sep  7 16:01:15 CEST 2025
+end of job
